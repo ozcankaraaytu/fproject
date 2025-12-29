@@ -909,9 +909,47 @@
         "section_margin_top_mobile": 0,
         "section_margin_bottom_mobile": 0
       }
+    },
+    "before_after_review_mobile": {
+      "type": "before-after-review",
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "bg_color": "#ffffff",
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "heading": "Real Customers, Real Results",
+        "before_label": "BEFORE",
+        "after_label": "AFTER",
+        "review_text": "This stuff is fantastic. I can noticeably tell a difference since I have started using it! I look so much younger! I'm in my Mid 40's and someone actually thought I was in my mid 30s the other night! Thanks Showage!",
+        "customer_name": "@Angelina K"
+      }
+    },
+    "why_prefer_mobile": {
+      "type": "why-prefer",
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "bg_color": "#ffffff",
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "heading": "WHY SHOULD YOU PREFER SHOWAGE ?",
+        "description": "The reason for skin sagginess and wrinkles are lack of collagen and elastin fibers which lie in the deeper layer of skin. It removes wrinkles and sagging and makes it look younger with its collagen content, Besides, this promotes skin tightening and prevents deeper lines.",
+        "feature_1_title": "Cross Link Technology",
+        "feature_2_title": "Removes Wrinkles",
+        "feature_3_title": "Stop Skin Sagginess",
+        "feature_4_title": "Allows Easy Filling Effect",
+        "feature_5_title": "Suitable for Daily Use",
+        "feature_6_title": "Supports Cell Formation",
+        "button_text": "SHOP NOW",
+        "button_link": "shopify://products/showage-anti-aging-shower-gel",
+        "discount_text": "25% OFF for your first order"
+      }
     }
   },
   "order": [
+    "before_after_review_mobile",
+    "why_prefer_mobile",
     "5f10fe11-5594-4f0c-ba41-502a34860e56",
     "autoloop_video_4Wefzb",
     "0d4d6c47-1297-4bca-8f4b-5dee6ba16a92",

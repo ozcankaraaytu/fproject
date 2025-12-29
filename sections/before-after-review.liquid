@@ -1,0 +1,155 @@
+{{ 'before-after-review.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  #before-after-review--{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background-color: {{ section.settings.bg_color }};
+  }
+{%- endstyle -%}
+
+<div id="before-after-review--{{ section.id }}" class="before-after-review-section{% if section.settings.desktop_hide %} desktop_hide{% endif %}{% if section.settings.mobile_hide %} mobile_hide{% endif %}">
+  <div class="page-width">
+    <!-- Heading -->
+    {% if section.settings.heading != blank %}
+      <h2 class="before-after-heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <!-- Before/After Container -->
+    <div class="before-after-container">
+      <!-- Labels Bar -->
+      <div class="labels-bar">
+        <div class="label-before">{{ section.settings.before_label }}</div>
+        <div class="label-after">{{ section.settings.after_label }}</div>
+      </div>
+
+      <!-- Images -->
+      <div class="before-after-images">
+        <div class="before-image">
+          {% if section.settings.before_image != blank %}
+            <img src="{{ section.settings.before_image | image_url: width: 400 }}" alt="Before" loading="lazy">
+          {% else %}
+            <img src="{{ 'before-after-before.jpg' | asset_url }}" alt="Before" loading="lazy">
+          {% endif %}
+        </div>
+        <div class="after-image">
+          {% if section.settings.after_image != blank %}
+            <img src="{{ section.settings.after_image | image_url: width: 400 }}" alt="After" loading="lazy">
+          {% else %}
+            <img src="{{ 'before-after-after.jpg' | asset_url }}" alt="After" loading="lazy">
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Star Rating -->
+    <div class="star-rating">
+      {% for i in (1..5) %}
+        <svg class="star-icon" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.5 0L14.0819 7.9463H22.4371L15.6776 12.8574L18.2595 20.8037L11.5 15.8926L4.74047 20.8037L7.32238 12.8574L0.56285 7.9463H8.91809L11.5 0Z" fill="#1a3760"/>
+        </svg>
+      {% endfor %}
+    </div>
+
+    <!-- Review Text (NOT italic) -->
+    {% if section.settings.review_text != blank %}
+      <p class="review-text">{{ section.settings.review_text }}</p>
+    {% endif %}
+
+    <!-- Customer Name (italic) -->
+    {% if section.settings.customer_name != blank %}
+      <p class="customer-name">{{ section.settings.customer_name }}</p>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Before/After Review",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "desktop_hide",
+      "label": "Hide on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_hide",
+      "label": "Hide on mobile",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "label": "Padding top",
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "label": "Padding bottom",
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Real Customers, Real Results"
+    },
+    {
+      "type": "image_picker",
+      "id": "before_image",
+      "label": "Before image"
+    },
+    {
+      "type": "image_picker",
+      "id": "after_image",
+      "label": "After image"
+    },
+    {
+      "type": "text",
+      "id": "before_label",
+      "label": "Before label",
+      "default": "BEFORE"
+    },
+    {
+      "type": "text",
+      "id": "after_label",
+      "label": "After label",
+      "default": "AFTER"
+    },
+    {
+      "type": "textarea",
+      "id": "review_text",
+      "label": "Review text",
+      "default": "This stuff is fantastic. I can noticeably tell a difference since I have started using it! I look so much younger! I'm in my Mid 40's and someone actually thought I was in my mid 30s the other night! Thanks Showage!"
+    },
+    {
+      "type": "text",
+      "id": "customer_name",
+      "label": "Customer name",
+      "default": "@Angelina K"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Before/After Review"
+    }
+  ]
+}
+{% endschema %}

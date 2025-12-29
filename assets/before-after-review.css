@@ -1,0 +1,136 @@
+.before-after-review-section {
+  text-align: center;
+  background-color: #fff;
+}
+
+.before-after-review-section .page-width {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Heading - Bold */
+.before-after-heading {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a3760;
+  margin: 0 0 15px 0;
+  font-style: normal;
+  font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+.before-after-container {
+  margin-bottom: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Labels Bar - On top of images, merged */
+.labels-bar {
+  display: flex;
+}
+
+.label-before,
+.label-after {
+  flex: 1;
+  padding: 8px 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.label-before {
+  background-color: #1a3760;
+}
+
+.label-after {
+  background-color: #c47f5a;
+}
+
+/* Images Container */
+.before-after-images {
+  display: flex;
+}
+
+.before-image,
+.after-image {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.before-image img,
+.after-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Placeholder */
+.placeholder-image {
+  background: linear-gradient(135deg, #d4a574 0%, #c49a6c 50%, #b8906a 100%);
+  aspect-ratio: 1/1.1;
+  width: 100%;
+}
+
+/* Star Rating */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+
+.star-rating .star-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.star-rating .star-icon path {
+  fill: #1a3760;
+}
+
+/* Review Text - NOT italic */
+.review-text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #444;
+  margin: 0 0 12px 0;
+  font-style: normal;
+  padding: 0 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Customer Name - Italic */
+.customer-name {
+  font-size: 13px;
+  color: #888;
+  font-weight: 400;
+  margin: 0;
+  font-style: italic;
+}
+
+/* Hide classes */
+@media screen and (min-width: 750px) {
+  .before-after-review-section.desktop_hide {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .before-after-review-section.mobile_hide {
+    display: none !important;
+  }
+
+  .before-after-heading {
+    font-size: 20px;
+  }
+
+  .review-text {
+    font-size: 12px;
+  }
+}
