@@ -137,7 +137,7 @@
           "settings": {
             "hide_in_desktop": false,
             "hide_in_mobile": true,
-            "heading": "<p>IT’S TIME TO TIGHTEN SAGGY SKIN AND REMOVE WRINKLES<br/></p>",
+            "heading": "<p>IT'S TIME TO TIGHTEN SAGGY SKIN AND REMOVE WRINKLES.<br/></p>",
             "heading_size": "h1"
           }
         },
