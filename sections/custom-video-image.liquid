@@ -1,0 +1,295 @@
+{{ 'video-section.css' | asset_url | stylesheet_tag }}
+
+  <style>
+			#section-{{ section.id }}{
+        background-color: {% if section.settings.bg_color != blank %}{{ section.settings.bg_color }}{% else %}transparent{% endif %};
+				padding-top: {{ section.settings.section_padding_top }}px;
+				padding-bottom: {{ section.settings.section_padding_bottom }}px;
+				margin-top: {{ section.settings.section_margin_top }}px;
+				margin-bottom: {{ section.settings.section_margin_bottom }}px;
+			}
+			
+		@media (max-width: 767px) {
+			#section-{{ section.id }}{
+				padding-top: {{ section.settings.section_padding_top_mobile }}px;
+				padding-bottom: {{ section.settings.section_padding_bottom_mobile }}px;
+				margin-top: {{ section.settings.section_margin_top_mobile }}px;
+				margin-bottom: {{ section.settings.section_margin_bottom_mobile }}px;
+			}
+		}
+</style>
+<div id="section-{{ section.id }}" class="video_text {{ section.settings.custom_class_section }} {% if section.settings.desktop_hide %}desktop_hide{% endif %} {% if section.settings.mobile_hide %}mobile_hide{% endif %}" >
+	 <div class="main_video_wrap {% if section.settings.show_full_width %}page-width-full{% else %}page-width{% endif %}">
+      <div class="main_video_div" >
+        {%- if section.settings.heading  != blank  or  section.settings.subtext != blank -%}
+          <div class="main_text">
+            {%- if section.settings.heading  != blank -%}
+              <h2 class="heading">{{section.settings.heading}}</h2>
+            {%- endif -%}
+            {%- if section.settings.subtext  != blank -%}
+              <p class="subtext">{{section.settings.subtext}}</p>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.videosd  != blank  or  section.settings.video != blank -%}
+          {% if section.settings.videosd   %}
+            <div class="videoa video-section__media">
+              {%- if section.settings.videosd.type == 'youtube' -%}
+                <iframe id="youtube-video" class="yt-videos"  width="420" height="515"
+                        src="https://www.youtube.com/embed/{{ section.settings.videosd.id }}?{% if section.settings.autoplay %}autoplay=1&loop=1{% endif %}&{% if section.settings.mute %}mute=1{% endif %}&{% if section.settings.yt_option %}amp;controls=0{% endif %}"
+                        class="js-youtube"
+                        allow="autoplay; encrypted-media"
+                        allowfullscreen
+                        autoplay="1"
+                        >
+                </iframe>
+              {%- else -%}
+                <iframe
+                    src="https://player.vimeo.com/video/{{ section.settings.videosd.id }}?{% if section.settings.autoplay %}autoplay=1{% endif %}&{% if section.settings.mute %}mute=1{% endif %}"
+                    class="js-vimeo"
+                    allow="autoplay; encrypted-media"
+                    autoplay="1"
+                    allowfullscreen
+                    >
+                </iframe>
+              {%- endif -%}
+            </div>
+          {%- else -%}
+            <div class="shopify_video video-section__media">
+                {% assign muteopt = section.settings.mute   %}
+                {% assign autoplayopt  = section.settings.autoplay %}
+                    {{ section.settings.video
+                      | video_tag: image_size: '1100x', controls: false, loop:"loop", muted:muteopt, autoplay:autoplayopt, loop:"loop" 
+                    }}
+            </div>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+      {%- if section.blocks.size > 0   -%}
+        <div class="main_block">
+          {%- for block in section.blocks -%}
+                {%- if  block.settings.image != blank or block.settings.titles != blank -%}
+                  <div class="img_txt_wrap">
+                    {%- if  block.settings.image != blank-%}
+                      <div class="img">
+                        {{ block.settings.image | image_url: width: 1500 | image_tag:
+                          loading: 'lazy',
+                          width: block.settings.image.width,
+                          height: image_height,
+                          class: 'image_item',
+                          sizes: sizes,
+                          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                          alt: block.settings.image.alt | escape
+                        }}
+                      </div>
+                    {%- endif -%}
+
+                    {%- if  block.settings.titles != blank-%}
+                      <div class="content">
+                        <p class="img_titles">
+                            {{  block.settings.titles }}
+                        </p>
+                      </div>
+                    {%- endif -%}
+                  </div>
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Custom video",
+    "settings": [
+			{
+        "type":"checkbox",
+        "id":"desktop_hide",
+        "label":"Desktop hide"
+			},
+			{
+        "type":"checkbox",
+        "id":"mobile_hide",
+        "label":"Mobile hide"
+			},
+      {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_full_width",
+      "label": "Full width"
+    },
+    {
+      "type": "text",
+      "id": "custom_class_section",
+      "label": "Custom class"
+    },
+			{
+				"type": "inline_richtext",
+				"id": "heading",
+				"label": "Heading"
+			},
+			{
+				"type": "inline_richtext",
+				"id": "subtext",
+				"label": "Sub text"
+			},
+			{
+        "type": "video_url",
+        "id": "videosd",
+        "label": "Product description video",
+        "accept": [
+          "youtube",
+          "vimeo"
+        ]
+      },
+      {
+        "type": "video",
+        "id": "video",
+        "label": "A Shopify-hosted video"
+      },
+      {
+        "type": "checkbox",
+        "id": "mute",
+        "label": "Mute",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "yt_option",
+        "label": "Option false",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "autoplay",
+        "label": "Autoplay",
+        "default": true
+      },
+      {   
+    "type": "header",
+    "content": "For desktop device"
+    },
+    {
+    "type": "range",
+    "id": "section_padding_top",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label": "Padding top",
+    "unit": "px",
+    "default": 0
+    },
+    {
+    "type": "range",
+    "id": "section_padding_bottom",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label":  "Padding bottom",
+    "unit": "px",
+    "default": 100
+    },
+    {
+    "type": "range",
+    "id": "section_margin_top",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label": "Margin top",
+    "unit": "px",
+    "default": 0
+    },
+    {
+    "type": "range",
+    "id": "section_margin_bottom",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label": "Margin bottom",
+    "unit": "px",
+    "default": 100
+    },
+    {
+    "type": "header",
+    "content": "For mobile device"
+    },
+    {
+    "type": "range",
+    "id": "section_padding_top_mobile",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label":"Padding top",
+    "unit": "px",
+    "default": 0
+    },
+    {
+    "type": "range",
+    "id": "section_padding_bottom_mobile",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label": "Padding bottom",
+    "unit": "px",
+    "default": 100
+    },
+    {
+    "type": "range",
+    "id": "section_margin_top_mobile",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label": "Margin top",
+    "unit": "px",
+    "default": 0
+    },
+    {
+    "type": "range",
+    "id": "section_margin_bottom_mobile",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label":"Margin bottom",
+    "unit": "px",
+    "default": 100
+    }
+
+
+    ],
+     "blocks": [
+    {
+      "type": "icon",
+      "name": "Icon",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Icon"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "titles",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+    "presets":[
+      {
+      "name":"Custom video"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

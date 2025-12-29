@@ -1,0 +1,110 @@
+{{ "section-brand-promotion.css" | asset_url | stylesheet_tag }}
+
+<div class="brand-autorotate-main-container{% if section.settings.desktop_hide %} desktop_hide{% endif %}{% if section.settings.mobile_hide %} mobile_hide{% endif %}">
+  <scrolling-promotion class="custom-scrolling-promotion scrolling-promotion scrolling-promotion--left brand-logo-promotion-main">
+    {% for i in (1..11) %}
+      <div class="promotion promotion--animated brand-logo-promotion-inner">
+        {% for block in section.blocks %}
+          {% if block.settings.icon != blank or block.settings.img_text != blank %}
+            <div class="promotion__item  promotion-item-wrapper">
+              <div class="image-animate-media">
+                {% if block.settings.icon != blank %}
+                  <img
+                    srcset="
+                      {%- if block.settings.icon.width >= 165 -%}{{ block.settings.icon | image_url: width: 165 }} 165w,{%- endif -%}
+                      {%- if block.settings.icon.width >= 360 -%}{{ block.settings.icon | image_url: width: 360 }} 360w,{%- endif -%}
+                      {%- if block.settings.icon.width >= 533 -%}{{ block.settings.icon | image_url: width: 533 }} 533w,{%- endif -%}
+                      {%- if block.settings.icon.width >= 720 -%}{{ block.settings.icon | image_url: width: 720 }} 720w,{%- endif -%}
+                      {%- if block.settings.icon.width >= 1000 -%}{{ block.settings.icon | image_url: width: 1000 }} 1000w,{%- endif -%}
+                      {%- if block.settings.icon.width >= 1500 -%}{{ block.settings.icon | image_url: width: 1500 }} 1500w,{%- endif -%}
+                      {{ block.settings.icon | image_url }} {{ block.settings.icon.width }}w
+                    "
+                    src="{{ block.settings.icon | image_url: width: 533 }}"
+                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+                    alt="{{ block.settings.icon.alt | escape }}"
+                    class="motion-reduce"
+                    {% unless lazy_load == false %}
+                      loading="lazy"
+                    {% endunless %}
+                    width="{{ block.settings.icon.width }}"
+                    height="{{ block.settings.icon.height }}"
+                  >
+                {% endif %}
+                {% if block.settings.img_text != blank %}
+                  <h3>{{ block.settings.img_text }}</h3>
+                {% endif %}
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endfor %}
+  </scrolling-promotion>
+
+  {% if section.settings.review_img != blank or section.settings.title != blank %}
+    <div class="review_title_promotion">
+      {% if section.settings.review_img != blank %}
+        {%- liquid
+          assign image_icon = section.settings.review_img
+          assign image_icon_size = '100vw'
+          assign image_icon_class = 'review_icon'
+          echo image_icon | image_url: width: 100 | image_tag: loading: 'lazy', class: image_icon_class, sizes: image_icon_size, widths: '50, 75, 100, 375, 550', is: 'lazy-image'
+        -%}
+      {% endif %}
+      {% if section.settings.title != blank %}
+        {{ section.settings.title }}
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name":"Brand Promotion",
+  "settings": [
+    {
+      "type":"checkbox",
+      "id":"desktop_hide",
+      "label":"Desktop Hide"
+    },
+    {
+      "type":"checkbox",
+      "id":"mobile_hide",
+      "label":"Mobile Hide"
+    },
+    {
+      "type": "image_picker",
+      "id": "review_img",
+      "label": "Review Image"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks":[
+    {
+      "type":"image",
+      "name":"Image",
+      "settings":[
+        {
+          "type":"image_picker",
+          "id":"icon",
+          "label":"Image"
+        },
+        {
+          "type":"text",
+          "id":"img_text",
+          "label":"Image Text"
+        }
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name":"Brand Promotion"
+    }
+  ]
+}
+{% endschema %}

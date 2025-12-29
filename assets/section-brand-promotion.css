@@ -1,0 +1,98 @@
+/* BRAND PROMOTION CUSTOMIZATION START */
+
+.brand-autorotate-main-container { background-color: #fff; position: relative;}
+
+.scrolling-promotion { display: flex; align-items: center; overflow: hidden; padding: 20px 0 20px 0; }
+.scrolling-promotion .promotion { flex: 0 0 auto; display: flex; align-items: center; }
+.scrolling-promotion .promotion img,
+.scrolling-promotion .promotion svg { max-width: 100%; width: auto; display: block; margin: 0 auto;}
+.scrolling-promotion .promotion--animated { animation-iteration-count: infinite; animation-timing-function: linear; animation-duration: 19.040000000000003s; animation-play-state: running; width: max-content; will-change: transform, width; }
+.scrolling-promotion--left .promotion--animated { animation-name: scrolling-left; }
+.scrolling-promotion--right .promotion--animated { animation-name: scrolling-right; }
+.scrolling-promotion .promotion__item h3 { min-height: 22px; color: rgba(0, 0, 0, 0.5); margin: 7px 0 0; font-size: calc(var(--font-heading-scale) * 1.72rem); font-family: var(--font-TT-Norms-Pro-Medium); letter-spacing: -.3px; text-align: center;}
+@media screen and (hover: hover) {
+  .scrolling-promotion:hover .promotion--animated { animation-play-state: paused; }
+}
+ .scrolling-promotion--paused .promotion--animated { animation-play-state: paused; } 
+.scrolling-promotion .promotion__item { margin: 0 2.5rem; display: flex; align-items: center; flex-direction: column; row-gap: 1rem; }
+.scrolling-promotion .promotion__item .image-animate-media img {max-height: 40px;}
+ .scrolling-promotion .media-wrapper:not(.loading) { background-color: transparent; }
+
+@keyframes scrolling-left {
+  0% { transform: translate3d(0, 0, 0); visibility: visible; }
+  100% { transform: translate3d(-100%, 0, 0); }
+}
+
+@keyframes scrolling-right {
+  0% { transform: translate3d(-100%, 0, 0); visibility: visible; }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+@media screen and (max-width:749px) {
+  .scrolling-promotion .promotion img,
+  .scrolling-promotion .promotion svg {
+    max-height: 40px !important;
+  }
+  .scrolling-promotion .promotion__item { margin: 0 0.5rem;}
+    .scrolling-promotion .promotion__item h3 { font-size: calc(var(--font-heading-scale) * 1.126rem); margin: 4px 0 0 0;}
+
+  .template-product .brand-autorotate-main-container.section_mobile_hide{ display: none;}
+
+  .scrolling-promotion{padding:20px 0;}
+}
+
+.review_title_promotion {
+  font-family: var(--font-Book);
+  /*font-weight: 800;*/
+  font-size: calc(var(--font-heading-scale) * 2.5rem);
+  color: #000;
+  line-height: calc(var(--font-heading-scale) * 2.5rem);
+  letter-spacing: normal;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  top:50%;
+  width: 100%;
+  left: 50%;
+  transform: translatex(-50%) translatey(-50%);
+  /*background-color: #ffffffd9;*/
+  background-image: url("https://cdn.shopify.com/s/files/1/0696/3953/6892/files/background-transprent.png?v=1716881644");
+  background-repeat: repeat;
+  background-size: contain;
+}
+.review_title_promotion .review_icon {
+  margin-bottom: 5px;
+}
+.review_title_promotion strong {
+  color: #ffaa01;
+  font-family: "Metropolis-ExtraBold";
+}
+.review_title_promotion p {
+  margin: 0 auto;
+  font-family: "Metropolis-Bold";
+}
+
+@media screen and (max-width:1199px) {
+  .review_title_promotion{
+    font-size: calc(var(--font-heading-scale) * 2.1rem);
+    line-height: calc(var(--font-heading-scale) * 2.1rem);
+  }
+  /*.scrolling-promotion .promotion img, .scrolling-promotion .promotion svg {
+    height: calc(var(--image-height) - 10px);
+  }*/
+}
+
+@media screen and (max-width:749px) {
+  .review_title_promotion{ font-size: calc(var(--font-heading-scale) * 1.6rem);
+  line-height: calc(var(--font-heading-scale) * 1.5rem);}
+  .review_title_promotion p {max-width: 200px;}
+  .review_title_promotion .review_icon {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 2px;
+  }
+  }
+
+/* BRAND PROMOTION CUSTOMIZATION END */

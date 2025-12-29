@@ -1,0 +1,263 @@
+{% style %}
+  #section-{{ section.id }} {
+    padding-top: {{ section.settings.padding-top }}px;
+    padding-bottom: {{ section.settings.padding-bottom }}px;
+  }
+{% endstyle %}
+
+<div id="section-{{ section.id }}" class="advertorial">
+  <div class="page-width">
+    <div class="div-wrapper">
+      <div class="content-side">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'richtext' %}
+              {% assign blockID = block.settings['block-id'] %}
+              {% assign textAlign = block.settings['text-align'] %}
+              {% assign richText = block.settings.richtext %}
+              {% assign textColor = block.settings['text-color'] %}
+              <div
+                class="advertorial-richtext"
+                id="{{ blockID }}"
+                style="text-align: {{ textAlign }}; color: {{ textColor }};"
+                {{ block.shopify_attributes }}
+              >
+                {{ richText }}
+              </div>
+
+            {% when 'image' %}
+              {% assign image = block.settings.image %}
+              {% assign bottomText = block.settings['bottom-text'] %}
+              {% assign backgroundColor = block.settings['background-color'] %}
+              {% if image != blank %}
+                <div
+                  class="advertorial-image"
+                  style="background-color: {{ backgroundColor }}"
+                  {{ block.shopify_attributes }}
+                >
+                  <img src="{{ image | image_url }}" width="100%">
+                  <div class="bottom-text">{{ bottomText }}</div>
+                </div>
+              {% endif %}
+
+            {% when 'video' %}
+              {% assign videoData = block.settings.video %}
+              {% assign bottomText = block.settings['bottom-text'] %}
+              {% assign backgroundColor = block.settings['background-color'] %}
+              <div
+                class=" autoloop-video"
+                style="background-color: {{ backgroundColor }}"
+                {{ block.shopify_attributes }}
+              >
+                {% if videoData != blank -%}
+                  {{-
+                    videoData
+                    | video_tag:
+                      loop: 'loop',
+                      muted: true,
+                      playsinline: true,
+                      autoplay: true,
+                      id: 'featured_video',
+                      class: 'autoplay'
+                  -}}
+                {%- endif %}
+                <div class="bottom-text">{{ bottomText }}</div>
+              </div>
+
+            {% when 'checkmark-list' %}
+              {% assign blockID = block.settings['block-id'] %}
+              <div id="{{ blockID }}" class="checkmark-list" {{ block.shopify_attributes }}>
+                {% assign checkmarkList = block.settings['checkmark-list'] %}
+                {{ checkmarkList }}
+              </div>
+
+            {% when 'button' %}
+              {% assign buttonLabel = block.settings['button-label'] %}
+              {% assign buttonURL = block.settings['button-url'] %}
+              {% assign buttonBackground = block.settings['button-background'] %}
+              <div class="advertorial-button" {{ block.shopify_attributes }}>
+                <a href="{{ buttonURL }}" style="background-color: {{ buttonBackground }}">{{ buttonLabel }}</a>
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+      <div class="sticky-side mobile_hide">
+        <div class="set-sticky-style">
+          <h3>Recommended:</h3>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0587/5135/2963/files/amazon-5-stars.png?v=1711542507"
+            width="100px"
+          >
+          <p>4.8 | 1,897 Reviews</p>
+          <h4 style="color: #19af42;">Anti-Aging Shower Gel</h4>
+          <div class="checkmark-list">
+            <ul>
+              <li>Effectively eliminates wrinkles & sagginess.</li>
+              <li>Visible results after first use.</li>
+              <li>Permanent results with regular use.</li>
+              <li>Natural ingredients and safe for daily use</li>
+            </ul>
+          </div>
+          <img src="https://cdn.shopify.com/s/files/1/0587/5135/2963/files/sag-gorsel.jpg?v=1711543141" width="100%">
+          <div class="advertorial-button" style="width: 100%;">
+            <a href="{{ buttonURL }}" style="background-color: #19AF42">Check Availability »</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Advertorial",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding-Bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 200,
+      "step": 2,
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "richtext",
+      "name": "Richtext",
+      "settings": [
+        {
+          "type": "text",
+          "id": "block-id",
+          "label": "Block ID"
+        },
+        {
+          "type": "richtext",
+          "id": "richtext",
+          "label": "Richtext"
+        },
+        {
+          "type": "select",
+          "id": "text-align",
+          "label": "Text Align",
+          "options": [
+            {
+              "label": "Left",
+              "value": "left"
+            },
+            {
+              "label": "Center",
+              "value": "center"
+            },
+            {
+              "label": "Right",
+              "value": "right"
+            }
+          ]
+        },
+        {
+          "type": "color",
+          "id": "text-color",
+          "label": "Text Color"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "bottom-text",
+          "label": "Bottom Text"
+        },
+        {
+          "type": "color",
+          "id": "background-color",
+          "label": "Background Color"
+        }
+      ]
+    },
+    {
+      "type": "video",
+      "name": "Video",
+      "settings": [
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video"
+        },
+        {
+          "type": "richtext",
+          "id": "bottom-text",
+          "label": "Bottom Text"
+        },
+        {
+          "type": "color",
+          "id": "background-color",
+          "label": "Background Color"
+        }
+      ]
+    },
+    {
+      "type": "checkmark-list",
+      "name": "Checkmark List",
+      "settings": [
+        {
+          "type": "text",
+          "id": "block-id",
+          "label": "Block ID"
+        },
+        {
+          "type": "richtext",
+          "id": "checkmark-list",
+          "label": "Checkmark List"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "button-label",
+          "label": "Button Label",
+          "default": "SHOP NOW"
+        },
+        {
+          "type": "url",
+          "id": "button-url",
+          "label": "Button URL"
+        },
+        {
+          "type": "color",
+          "id": "button-background",
+          "label": "Button Background",
+          "default": "#19AF42"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Advertorial"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,1092 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_slider_with_video_eUzfaM": {
+      "type": "custom-slider-with-video",
+      "blocks": {
+        "image_8JRqGG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Showage-Slider21.jpg"
+          }
+        },
+        "image_Wy6PPM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Showage-Slider22.jpg"
+          }
+        },
+        "image_htVgpy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Showage-Slider23.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_8JRqGG",
+        "image_Wy6PPM",
+        "image_htVgpy"
+      ],
+      "custom_css": [
+        ".slick-dots li button:before {font-size: 16px;}"
+      ],
+      "settings": {
+        "hide_in_desktop": true,
+        "hide_in_mobile": false,
+        "heading": "",
+        "dots_enabled": true,
+        "arrow_enabled": false,
+        "autoplay_enabled": false,
+        "infinite_enabled": true,
+        "slide_to_show": 1,
+        "slide_to_scroll": 1,
+        "dk_padding_top": 0,
+        "dk_padding_bottom": 0,
+        "mb_padding_top": 36,
+        "mb_padding_bottom": 36
+      }
+    },
+    "0dd8dd93-9643-49c2-9efd-bade1ce3687f": {
+      "type": "custom-banner",
+      "settings": {
+        "hide_in_desktop": false,
+        "hide_in_mobile": true,
+        "bg_color": "#dfdfde",
+        "hide_mobile": false,
+        "dk_image": "shopify://shop_images/product-details_slider1.jpg",
+        "hide_desktop": false,
+        "url": "",
+        "bottom_text": "",
+        "dk_padding_top": 0,
+        "dk_padding_bottom": 0,
+        "mb_padding_top": 0,
+        "mb_padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "desktop_hide": false,
+            "mobile_hide": true,
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "ee1c5514-01ea-4287-8bb9-e7dd329d2d6c": {
+          "type": "supply_day",
+          "settings": {
+            "desktop_hide": false,
+            "mobile_hide": true
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "desktop_hide": false,
+            "mobile_hide": true
+          }
+        },
+        "custom_liquid_GKLi4p": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"desktop_hide\">\n    <h2 style=\"margin-bottom: 2rem;\">Stay Youthful with <span style=\"color: #e73400; font-size: calc(var(--font-heading-scale) * 2.75rem); font-family: var(--Metropolis-Extrabold);\"> Showage! </span></h2>\n    <strong>Showage Natural Shower Gel</strong> reduces wrinkles and tightens saggy skin. With Pro-Xylane, hyaluronic acid, Vitamin C, and Vitamin D, it rejuvenates and firms your skin while preventing age-related blemishes. Loved by many for its safe and natural ingredients.\n\n<div style=\"display: flex; flex-direction: row; justify-content: space-between; margin-top: 2rem;\">\n        <div style=\" width: fit-content; display: flex; flex-direction: column; justify-content: center; text-align: center;\">\n            <img src=\"https://cdn.shopify.com/s/files/1/0587/5135/2963/files/showage-PFC-21.png?v=1716535180\"\n                style=\"width: 50px; margin: auto;\">\n            <p style=\"margin-top: 3px;\"><strong>Nourishes</strong><br> The Skin</p>\n        </div>\n\n        <div style=\" width: fit-content; display: flex; flex-direction: column; justify-content: center; text-align: center;\">\n            <img src=\"https://cdn.shopify.com/s/files/1/0587/5135/2963/files/showage-PFC-22.png?v=1716535179\"\n                style=\"width: 50px; margin: auto;\">\n            <p style=\"margin-top: 3px;\"><strong>Eliminates</strong><br> Wrinkles</p>\n        </div>\n        <div style=\" width: fit-content; display: flex; flex-direction: column; justify-content: center; text-align: center;\">\n            <img src=\"https://cdn.shopify.com/s/files/1/0587/5135/2963/files/showage-PFC-23.png?v=1716535180\"\n                style=\"width: 50px; margin: auto;\">\n            <p style=\"margin-top: 3px;\"><strong>Effects on </strong><br> First Use</p>\n        </div>\n\n        <div style=\" width: fit-content; display: flex; flex-direction: column; justify-content: center; text-align: center;\">\n            <img src=\"https://cdn.shopify.com/s/files/1/0587/5135/2963/files/showage-PFC-24.png?v=1716535180\"\n                style=\"width: 50px; margin: auto;\">\n            <p style=\"margin-top: 3px;\"><strong>No Allergic</strong><br> Reactions</p>\n        </div>\n    </div>\n</div>"
+          }
+        },
+        "custom_liquid_r6mmfC": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"mobile_hide\">How about getting rid of wrinkles and saggy skin with Showage natural shower gel?\n<br><br>\nWith its safe content and easy application, it is the favorite of many customers! Showage has a natural content that can regenerate cells and eliminate wrinkles, tighten saggy skin and age-related blemishes and prevent their recurrence.</div>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "desktop_hide": false,
+            "mobile_hide": false,
+            "picker_type": "button",
+            "free_shipping_amount": "68"
+          }
+        },
+        "9add0aa1-a71e-415d-8fe8-e2bcaa100378": {
+          "type": "custom_richtext",
+          "settings": {
+            "custom_richtext": "<p>FREE SHIPPING FOR ORDERS OVER US$68</p>",
+            "desktop_hide": false,
+            "mobile_hide": true
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true,
+            "show_button_bottom_image": true
+          }
+        },
+        "03a6111b-5e7e-46fe-865f-0041e44a7bc1": {
+          "type": "custom_metafield",
+          "settings": {
+            "desktop_hide": false,
+            "mobile_hide": true
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "vendor",
+        "ee1c5514-01ea-4287-8bb9-e7dd329d2d6c",
+        "price",
+        "custom_liquid_GKLi4p",
+        "custom_liquid_r6mmfC",
+        "variant_picker",
+        "9add0aa1-a71e-415d-8fe8-e2bcaa100378",
+        "buy_buttons",
+        "03a6111b-5e7e-46fe-865f-0041e44a7bc1"
+      ],
+      "custom_css": [
+        ".product__media-wrapper {display: none;}",
+        ".custom_metafiels_benifit {margin-top: 1rem;}",
+        ".product__info-container {color: #000;}",
+        ".form__label {display: none;}",
+        "@media screen and (max-width: 749px) {.product__title {display: none; } h1 {color: #ff3a0c; }}"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "show_policy": false,
+        "sticky_add_cart_btn": true,
+        "btn_sub_text": "60-DAYS MONEY BACK GUARANTEE",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 12,
+        "padding_bottom": 28
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "a72cd233-303c-4b45-a951-3a078d577833": {
+      "type": "image-with-text-full",
+      "blocks": {
+        "template--15279112421487__a72cd233-303c-4b45-a951-3a078d577833-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "GET READY TO HAVE A SMOOTH SKIN!",
+            "heading_size": "h1"
+          }
+        },
+        "template--15279112421487__a72cd233-303c-4b45-a951-3a078d577833-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Showage shower gel with Pro-Xylane, hyaluronic acid, vitamin C and vitamin D to prevent skin aging and eliminate wrinkles and impurities.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--15279112421487__a72cd233-303c-4b45-a951-3a078d577833-heading-1",
+        "template--15279112421487__a72cd233-303c-4b45-a951-3a078d577833-text-1"
+      ],
+      "settings": {
+        "desktop_hide": false,
+        "mobile_hide": true,
+        "image": "shopify://shop_images/product-details_h1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "90a1ebe6-a414-4f52-a717-6e161cad0b35": {
+      "type": "Ingredients",
+      "blocks": {
+        "template--15279112421487__90a1ebe6-a414-4f52-a717-6e161cad0b35-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/product-details_ingredient1.png",
+            "title": "PRO-XYLANE",
+            "text": "<p>It can add density and fullness to the skin, correct skin tone and provide a bright appearance.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--15279112421487__90a1ebe6-a414-4f52-a717-6e161cad0b35-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/product-details_ingredient2.png",
+            "title": "HYALURONIC ACID",
+            "text": "<p>It helps plump up the skin and improve the shape of the face by penetrating the lower layers of the skin.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--15279112421487__90a1ebe6-a414-4f52-a717-6e161cad0b35-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/product-details_ingredient3.png",
+            "title": "VITAMIN C",
+            "text": "<p>It helps to eliminate skin damage caused by external factors. It can make the skin look more lively.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "21941b81-1881-4587-8cc2-36ff7b375e3d": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/product-details_ingredient4.png",
+            "title": "VITAMIN D",
+            "text": "<p>It can effectively protect the skin and keep it young. Thanks to its immunity, it can protect the skin from environmental factors that accelerate aging.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15279112421487__90a1ebe6-a414-4f52-a717-6e161cad0b35-column-1",
+        "template--15279112421487__90a1ebe6-a414-4f52-a717-6e161cad0b35-column-2",
+        "template--15279112421487__90a1ebe6-a414-4f52-a717-6e161cad0b35-column-3",
+        "21941b81-1881-4587-8cc2-36ff7b375e3d"
+      ],
+      "custom_css": [
+        ".sub_title {width: 35%; margin: auto; margin-bottom: 1rem;}"
+      ],
+      "settings": {
+        "desktop_hide": false,
+        "mobile_hide": true,
+        "bg_color": "#f5f3e6",
+        "show_full_width": false,
+        "title": "",
+        "sub_title": "WHAT IS INSIDE SHOWAGE ANTI-AGING SHOWER GEL?",
+        "sub_richtext": "<ul><li>Chemical and Drug Free</li><li>GMP Certified</li></ul>",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "section_padding_top": 50,
+        "section_padding_bottom": 50,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 40,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    },
+    "d8149f51-874e-4b7a-9c87-7b675ede08e2": {
+      "type": "add-cart-btn",
+      "settings": {
+        "desktop_hide": false,
+        "mobile_hide": true,
+        "bg_color": "#f5f3e6",
+        "show_full_width": false,
+        "btn_sub_text": "",
+        "section_padding_top": 0,
+        "section_padding_bottom": 60,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 50,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    },
+    "14f7ad6a-a452-423d-b66f-8428ad96091c": {
+      "type": "how-to-use",
+      "blocks": {
+        "template--15270936313967__14f7ad6a-a452-423d-b66f-8428ad96091c-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/product-details_howtouse1.png",
+            "title": "Step 1",
+            "text": "<p>Rinse your skin with warm water</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--15270936313967__14f7ad6a-a452-423d-b66f-8428ad96091c-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/product-details_howtouse2.png",
+            "title": "Step 2",
+            "text": "<p>Put some of the product in the palm of your hand</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--15270936313967__14f7ad6a-a452-423d-b66f-8428ad96091c-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/product-details_howtouse3.png",
+            "title": "Step 3",
+            "text": "<p>Massage and lather with oval movements</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xdwnXg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/product-details_howtouse4.png",
+            "title": "Step 4",
+            "text": "<p>Bath glove increases the effect</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15270936313967__14f7ad6a-a452-423d-b66f-8428ad96091c-column-1",
+        "template--15270936313967__14f7ad6a-a452-423d-b66f-8428ad96091c-column-2",
+        "template--15270936313967__14f7ad6a-a452-423d-b66f-8428ad96091c-column-3",
+        "column_xdwnXg"
+      ],
+      "custom_css": [],
+      "settings": {
+        "desktop_hide": false,
+        "mobile_hide": true,
+        "bg_color": "#d6d6d6",
+        "show_full_width": false,
+        "title": "HOW TO USE?",
+        "heading_size": "h0",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-1cc326f4-c451-4fe4-8cc5-fa74f9429567",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "section_padding_top": 50,
+        "section_padding_bottom": 20,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 45,
+        "section_padding_bottom_mobile": 20,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    },
+    "cb2666a5-a555-4bd5-9185-d749bac0925f": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--15270936313967__cb2666a5-a555-4bd5-9185-d749bac0925f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "GET THE BODY OF YOUR DREAMS",
+            "heading_size": "h2"
+          }
+        },
+        "template--15270936313967__cb2666a5-a555-4bd5-9185-d749bac0925f-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Vitamin C formula helps repair skin damage.</li><li>Can firm up the skin up to 94%.</li><li>Can disappear wrinkles and is suitable for all skin types.</li></ul>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--15270936313967__cb2666a5-a555-4bd5-9185-d749bac0925f-heading-1",
+        "template--15270936313967__cb2666a5-a555-4bd5-9185-d749bac0925f-text-1"
+      ],
+      "settings": {
+        "desktop_hide": false,
+        "mobile_hide": true,
+        "bg_color": "#ffffff",
+        "show_full_width": true,
+        "image": "shopify://shop_images/product-details_h2.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "scheme-45787b07-fe61-4fd1-9676-bab1234294d7",
+        "image_behavior": "none",
+        "mobile_second": false,
+        "mobile_content_alignment": "left",
+        "section_padding_top": 20,
+        "section_padding_bottom": 20,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "section_margin_top_mobile": 25,
+        "section_margin_bottom_mobile": 25
+      }
+    },
+    "76e44fb2-7054-4c5e-aba8-9061340d83e7": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--15270936313967__76e44fb2-7054-4c5e-aba8-9061340d83e7-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What's included",
+            "icon": "none",
+            "row_content": "<p>Every Showage kit contains 1 Showage Anti-aging shower gel.</p>",
+            "page": ""
+          }
+        },
+        "template--15270936313967__76e44fb2-7054-4c5e-aba8-9061340d83e7-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "none",
+            "row_content": "<p>GLYCERIN<br/>PROPANEDIOL<br/>BUTYLENE GLYCOL<br/>SODIUM HYALURONATE<br/>PHENOXYETHANOL<br/>ETHOXYDIGLYCOL<br/>DEXTRAN<br/>HYALURONIC ACID<br/>PARFUM<br/>ETHYLHEXYLGLCERIN<br/>TETRASODIUM EDTA<br/>ACETYL TETRAPEPTIDE-3<br/>TRIFOLIUM PRATENSE (CLOVER) FLOWER EXTRACT<br/>OCTENIDINE HCL<br/>AMYL CIHANAMAL<br/>BENZYL SALICYLATE<br/>GERANIOL<br/>HEXYL CINNAMAL<br/>LINALOOL</p>",
+            "page": ""
+          }
+        },
+        "template--15270936313967__76e44fb2-7054-4c5e-aba8-9061340d83e7-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Frequently asked questions",
+            "icon": "none",
+            "row_content": "<p><strong>Does it have any side effects?</strong></p><p><br/>Showage can be made with natural ingredients that do not contain chemicals harmful to the skin. The tests have shown that it does not harm the skin.<br/><br/><strong>How does Showage work?</strong></p><p><br/>Thanks to the special ingredients, it can fill the gaps caused by wrinkles and make the skin look firm, smooth and young. With hyaluronic acid, it can tighten and smooth sagging skin.<br/><br/><strong>How long does it take before the result is visible?</strong></p><p><strong><br/></strong>After the first application, the effect on wrinkles and saggy skin can be seen, and after 1 month of regular use, the skin can look younger.<br/><br/>How can i track my order?<br/>You will recieve an email that includes your tracking code after your purchase. You can track your order with it.<br/><br/>For frequently asked questions, visit <a href=\"/pages/faq\" title=\"Faq\">FAQ</a><br/></p>",
+            "page": ""
+          }
+        },
+        "template--15270936313967__76e44fb2-7054-4c5e-aba8-9061340d83e7-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Shipping & returns",
+            "icon": "none",
+            "row_content": "<p>Your order will be shipped on the same day and will be delivered to you as soon as possible depending on your location..<br/>If you for any reason are not satisfied, we will offer you a free return and full refund within 30 days from the day of delivery.<br/>For information on shipping and returns, see our shipping policy <a href=\"/policies/shipping-policy\" title=\"Shipping Policy\">HERE</a><br/><br/></p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15270936313967__76e44fb2-7054-4c5e-aba8-9061340d83e7-collapsible_row-1",
+        "template--15270936313967__76e44fb2-7054-4c5e-aba8-9061340d83e7-collapsible_row-2",
+        "template--15270936313967__76e44fb2-7054-4c5e-aba8-9061340d83e7-collapsible_row-3",
+        "template--15270936313967__76e44fb2-7054-4c5e-aba8-9061340d83e7-collapsible_row-4"
+      ],
+      "custom_css": [],
+      "settings": {
+        "desktop_hide": false,
+        "mobile_hide": true,
+        "bg_color": "",
+        "show_full_width": false,
+        "default_padding": false,
+        "caption": "",
+        "heading": "<strong>PRODUCT DETAILS</strong>",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "button_text": "",
+        "button_link": "",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "section_padding_top": 40,
+        "section_padding_bottom": 100,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 40,
+        "section_padding_bottom_mobile": 100,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    },
+    "92fa3ee4-6a66-4482-9925-1247a5985aff": {
+      "type": "custom-icon-with-text",
+      "blocks": {
+        "105a5fe3-0cdc-4623-bf8c-e37d2ea29bed": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/1_e79421c4-968c-4ce8-8d8e-6a30ba51928a.png",
+            "heading": ""
+          }
+        },
+        "b109480d-09aa-4b35-837d-553cea1f15da": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/2_456e5ff0-28d1-41bb-ad98-02608202b57a.png",
+            "heading": ""
+          }
+        },
+        "4da51dff-dc26-4bc4-95dd-04492683cd22": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/3_c4207a5c-3620-4d31-8241-ac9d84602b30.png",
+            "heading": ""
+          }
+        },
+        "f6e2b5f8-b075-4db6-8aa1-cd77ed3f563a": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/4_c764fcb3-3272-4523-b6c7-25cbf5d1120d.png",
+            "heading": ""
+          }
+        },
+        "8eee3501-1682-48d2-a126-bbf71694f574": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/5_7845a471-7ddc-48fd-8728-9084d0e8ccc0.png",
+            "heading": ""
+          }
+        },
+        "c4df0970-1d1a-4b5f-a699-d747464c86a1": {
+          "type": "block",
+          "settings": {
+            "image": "shopify://shop_images/6_623bf6b3-e88c-4558-b3cc-d49dfdee8ec5.png",
+            "heading": ""
+          }
+        }
+      },
+      "block_order": [
+        "105a5fe3-0cdc-4623-bf8c-e37d2ea29bed",
+        "b109480d-09aa-4b35-837d-553cea1f15da",
+        "4da51dff-dc26-4bc4-95dd-04492683cd22",
+        "f6e2b5f8-b075-4db6-8aa1-cd77ed3f563a",
+        "8eee3501-1682-48d2-a126-bbf71694f574",
+        "c4df0970-1d1a-4b5f-a699-d747464c86a1"
+      ],
+      "custom_css": [
+        "img {height: 70px; width: auto;}",
+        "h2 {color: #fff; font-size: calc(var(--font-heading-scale) * 2rem);}",
+        ".extra_image_text img {height: unset;}",
+        ".icon_with_text {background-color: #ff3a0c;}",
+        ".multiple_icon_text {gap: 0px;}"
+      ],
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "full_width": false,
+        "bg_color": "#f1f1f1",
+        "custom_class_section": "",
+        "heading": "Need To Know",
+        "subtext": "",
+        "button_text": "",
+        "button_link": "",
+        "button_bottom": "",
+        "extra_text": "",
+        "section_padding_top": 20,
+        "section_padding_bottom": 20,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 15,
+        "section_padding_bottom_mobile": 15,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    },
+    "fb857160-f2f3-4ec4-8a95-588e017a5ead": {
+      "type": "does-it-work",
+      "custom_css": [
+        ".back_image img {border: unset;}",
+        "h2 {color: #ff3a0c; text-transform: unset;}"
+      ],
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "full_width": false,
+        "bg_color": "rgba(0,0,0,0)",
+        "heading": "eliminates wrinkles in 1 month",
+        "subtext": "As you age, the deficiency of vitamins C and D in the body can lead to the formation of wrinkles and blemishes on the skin. ShowAge shower gel <strong>eliminates the blemishes and wrinkles caused by aging through its skin-supporting vitamin care.</strong>",
+        "image": "shopify://shop_images/STEPS.png",
+        "videosd": "",
+        "mute": true,
+        "yt_option": false,
+        "autoplay": true,
+        "section_padding_top": 60,
+        "section_padding_bottom": 60,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 35,
+        "section_padding_bottom_mobile": 35,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    },
+    "autoloop_video_9pzKKV": {
+      "type": "autoloop-video",
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "heading": "",
+        "video": "shopify://files/videos/01.mp4"
+      }
+    },
+    "5d8ce98d-966c-4919-b81a-a807d90d06bc": {
+      "type": "add-cart-btn",
+      "custom_css": [
+        ".sub_text {color: #fff;}"
+      ],
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "bg_color": "",
+        "bg-image": "shopify://shop_images/image_04.jpg",
+        "show_full_width": false,
+        "button_top_image": "shopify://shop_images/USERS-PHOTO.png",
+        "btn_sub_text": "60% OFF ON YOUR FIRST ORDER",
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 25,
+        "section_padding_bottom_mobile": 0,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    },
+    "icon_with_text_background_JBwitV": {
+      "type": "icon-with-text-background",
+      "custom_css": [
+        "* {color: #fff;}",
+        "h2 strong {background: linear-gradient( 0deg, rgba(255, 247, 16, 0.31) 0%, rgba(255, 247, 16, 0.31) 40%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 100% );}"
+      ],
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "background": "shopify://shop_images/product_showage_global_05_4b5a1af3-3a39-402f-9b33-3de512b45a96.jpg",
+        "heading": "<h2><strong>dermatologist</strong> approved</h2>",
+        "content": "<p>ShowAge has been formulated in international laboratories and its formula and effects have been approved. <strong>ShowAge treats wrinkles and saggings with its vitamin-based formula.</strong> It stops anti-aging signs without damaging the skin.</p>"
+      }
+    },
+    "icon_with_text_background_Q6XGVt": {
+      "type": "icon-with-text-background",
+      "blocks": {
+        "icon_with_text_D4HLNd": {
+          "type": "icon-with-text",
+          "settings": {
+            "icon": "shopify://shop_images/1_e1362154-d38f-4c2d-a6cb-dfbc57b60624.png",
+            "text": "<h4><strong>PRO-XYLANE</strong></h4><p>It provides density and fullness to the skin, <strong>corrects skin tone and provides a shiny appearance.</strong></p>"
+          }
+        },
+        "icon_with_text_R6BEYx": {
+          "type": "icon-with-text",
+          "settings": {
+            "icon": "shopify://shop_images/2_280d0c1a-fdb7-4157-90c3-a16f1a394b43.png",
+            "text": "<h4><strong>HYALURONIC ACID</strong></h4><p>It helps to penetrate the deeper layers of the skin, promoting plumpness and <strong>supporting facial contour enhancement.</strong></p>"
+          }
+        },
+        "icon_with_text_3m3ckH": {
+          "type": "icon-with-text",
+          "settings": {
+            "icon": "shopify://shop_images/3_f7d60ad0-ced6-4ef4-9296-ba5cfe14636f.png",
+            "text": "<h4><strong>INGREDIENT'S EFFECT</strong></h4><p>Ingredients make skin healthy and <strong>completely eliminate wrinkles. Prevents the anti-aging signs.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_D4HLNd",
+        "icon_with_text_R6BEYx",
+        "icon_with_text_3m3ckH"
+      ],
+      "custom_css": [
+        ".content {width: 76%;}",
+        ".iicon-with-text {display: flex; flex-direction: row; align-items: center;}",
+        ".iicon {margin-right: 1rem;}",
+        "p {margin-top: 0.51rem;}",
+        "h4 strong {background: linear-gradient( 0deg, rgba(255, 247, 16, 0.51) 0%, rgba(255, 247, 16, 0.51) 40%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 100% );}",
+        "h2,h4 {color: #ff3a0c;}",
+        ".icon-with-text-wrapper {display: unset;}",
+        "h2 {font-size: calc(var(--font-heading-scale) * 2.2rem); margin-bottom: 1rem;}"
+      ],
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "background": "shopify://shop_images/product_showage_global_06.jpg",
+        "heading": "<h2>younger skin & body in a short time</h2>",
+        "content": "<p>Thanks to its herbal ingredients, it directly affects the wrinkled area and <strong>instantly starts to rejuvenate the skin in 1 month.</strong></p>"
+      }
+    },
+    "after_usage_percentage_LgVc6a": {
+      "type": "after-usage-percentage",
+      "blocks": {
+        "usage_block_rCLeWy": {
+          "type": "usage-block",
+          "settings": {
+            "image": "shopify://shop_images/image.png",
+            "top-banner": "IMMEDIATELY",
+            "percentage": 43,
+            "usage-content": "<p>After the first use, it is 43% effective and moisturizes the skin. It quickly stops the aging signs. <strong>Completely cleans the body and the skin pores.</strong></p>"
+          }
+        },
+        "usage_block_6bFfzi": {
+          "type": "usage-block",
+          "settings": {
+            "image": "shopify://shop_images/image2.png",
+            "top-banner": "AFTER 1 WEEK",
+            "percentage": 70,
+            "usage-content": "<p>After 1 week, it provides elasticity and a firm appearance to the skin. <strong>A noticeable change begins to occur in wrinkles.</strong></p>"
+          }
+        },
+        "usage_block_JHjXCK": {
+          "type": "usage-block",
+          "settings": {
+            "image": "shopify://shop_images/image3.png",
+            "top-banner": "AFTER 28 DAYS",
+            "percentage": 92,
+            "usage-content": "<p>At the end of the month, it completely removes wrinkles and restores the skin to its healthy state, <strong>with regular use, it permanently removes wrinkles by 92%</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "usage_block_rCLeWy",
+        "usage_block_6bFfzi",
+        "usage_block_JHjXCK"
+      ],
+      "custom_css": [
+        "h1 {color: #ff3a0c;}",
+        ".usage-percentage-header h3 {margin: 0; color: #ff3a0c;}",
+        ".usage-percentage-header {padding-left: 2rem;}"
+      ],
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "background-image": "shopify://shop_images/product_showage_global_07.jpg",
+        "heading": "<h1>the most</h1><h1>advanced</h1><h3>anti-aging gel</h3>"
+      }
+    },
+    "image_banner_bQXLjQ": {
+      "type": "image-banner",
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "image": "shopify://shop_images/product_showage_global_08.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "ae9f9b9e-5628-46a6-8d8c-366c33514f8a": {
+      "type": "add-cart-btn",
+      "custom_css": [
+        ".add_to_cart_btn_section_main {background-color: #ff3a0c;}",
+        ".sub_text {color: #fff;}"
+      ],
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "bg_color": "",
+        "show_full_width": false,
+        "btn_sub_text": "60% OFF ON YOUR FIRST ORDER",
+        "section_padding_top": 0,
+        "section_padding_bottom": 20,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 20,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    },
+    "image_banner_fgnKdd": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_WFRwzr": {
+          "type": "heading",
+          "settings": {
+            "heading": "showage will create miracles <strong>on your skin</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_f3rGre": {
+          "type": "text",
+          "settings": {
+            "text": "Thanks to its herbal ingredients, it is <strong>10x more effective than other anti-aging shower gels.</strong>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_WFRwzr",
+        "text_f3rGre"
+      ],
+      "custom_css": [
+        ".banner {display: flex !important; flex-direction: column-reverse;}",
+        ".banner__box {background-color: #fff; color: #000; text-align: left;}",
+        ".banner__box strong {font-weight: 800;}",
+        "h2 {color: #ff3a0c; text-align: left;}",
+        "h2 strong {background: linear-gradient( 0deg, rgb(249, 255, 169) 0%, rgb(249, 255, 169) 40%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 100% );}"
+      ],
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "image": "shopify://shop_images/image_a02fd340-77ea-4c06-9c65-e70c0ccb1244.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "autoloop_video_C9tHCB": {
+      "type": "autoloop-video",
+      "custom_css": [
+        "h1 strong {color: #ff3a0c; background: linear-gradient( 0deg, rgb(249, 255, 169) 0%, rgb(249, 255, 169) 40%, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0) 100% );}",
+        ".autoloop-video {padding-top: 3rem; background-color: #fff;}",
+        "h1 {padding-bottom: 3rem; padding-left: 2rem;}"
+      ],
+      "settings": {
+        "desktop_hide": false,
+        "mobile_hide": false,
+        "heading": "<h1><strong>how to use showage?</strong></h1>",
+        "video": "shopify://files/videos/02.mp4"
+      }
+    },
+    "image_banner_4AtUwz": {
+      "type": "image-banner",
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "image": "shopify://shop_images/product_showage_global_12.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "add_cart_btn_NNbxn3": {
+      "type": "add-cart-btn",
+      "custom_css": [
+        "img {width: 220px;}",
+        ".add_to_cart_btn_section_main {background-color: #fff;}",
+        ".custom_add_cart {background-color: #ff3a0c;}"
+      ],
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "bg_color": "",
+        "show_full_width": false,
+        "button_top_image": "shopify://shop_images/USERS-PHOTO_81aebb9a-0a49-48f7-a941-9c3945ebfcf7.png",
+        "btn_sub_text": "60% OFF ON YOUR FIRST ORDER",
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 25,
+        "section_padding_bottom_mobile": 25,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    },
+    "29caacd9-11f3-4c9b-b0d9-484a2a7b07b7": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--15279000289391__d647dc2c-669c-4696-8b84-956a9dd2aa18-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there any side effects?",
+            "icon": "none",
+            "row_content": "<p>No, there is no side effect. ShowAge is made from plant-based ingredients which completely eliminate wrinkles on your skin.</p>",
+            "page": ""
+          }
+        },
+        "13fd0bca-93c8-4351-9960-8577eed1ff41": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use it during pregnancy?",
+            "icon": "none",
+            "row_content": "<p>ShowAge is prepared based on completely natural ingredients and no side effects have been observed, but we recommend that you use it in consultation with your doctor during pregnancy.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_JmpRte": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When should I use it?",
+            "icon": "none",
+            "row_content": "<p>For the best result, you can use it whenever you take a shower.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_FKNjmz": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long does it take to see the effect?",
+            "icon": "none",
+            "row_content": "<p>It shows an effect on wrinkles after the first use, but we recommend regular use for 1 month to get a permanent result.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_FVzdVk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use it together with different products?",
+            "icon": "none",
+            "row_content": "<p>Yes, you can use it with different products freely without any problems.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_f6Mbkd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use it on sensitive skin?",
+            "icon": "none",
+            "row_content": "<p>Yes, you can use it. It’s suitable for all skin types.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_8dU3gW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Does it completely remove wrinkles?",
+            "icon": "none",
+            "row_content": "<p>Yes, it completely eliminates wrinkles with regular use.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15279000289391__d647dc2c-669c-4696-8b84-956a9dd2aa18-collapsible_row-1",
+        "13fd0bca-93c8-4351-9960-8577eed1ff41",
+        "collapsible_row_JmpRte",
+        "collapsible_row_FKNjmz",
+        "collapsible_row_FVzdVk",
+        "collapsible_row_f6Mbkd",
+        "collapsible_row_8dU3gW"
+      ],
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "bg_color": "",
+        "show_full_width": true,
+        "default_padding": false,
+        "caption": "",
+        "heading": "Frequently Asked Questions",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "",
+        "container_color_scheme": "scheme-5af5bd8a-cb68-427c-a08b-bb35e25a2df1",
+        "open_first_collapsible_row": false,
+        "button_text": "",
+        "button_link": "",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    },
+    "c2ffebe9-bda4-489c-9abf-d0e422d2abc5": {
+      "type": "product-review",
+      "settings": {
+        "desktop_hide": false,
+        "mobile_hide": false,
+        "full_width": false,
+        "bg_color": "#ffffff",
+        "title": "Product reviews",
+        "show_slider": false,
+        "column_counts": 3,
+        "section_padding_top": 0,
+        "section_padding_bottom": 100,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 50,
+        "section_padding_bottom_mobile": 50,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "custom_slider_with_video_eUzfaM",
+    "0dd8dd93-9643-49c2-9efd-bade1ce3687f",
+    "main",
+    "related-products",
+    "a72cd233-303c-4b45-a951-3a078d577833",
+    "90a1ebe6-a414-4f52-a717-6e161cad0b35",
+    "d8149f51-874e-4b7a-9c87-7b675ede08e2",
+    "14f7ad6a-a452-423d-b66f-8428ad96091c",
+    "cb2666a5-a555-4bd5-9185-d749bac0925f",
+    "76e44fb2-7054-4c5e-aba8-9061340d83e7",
+    "92fa3ee4-6a66-4482-9925-1247a5985aff",
+    "fb857160-f2f3-4ec4-8a95-588e017a5ead",
+    "autoloop_video_9pzKKV",
+    "5d8ce98d-966c-4919-b81a-a807d90d06bc",
+    "icon_with_text_background_JBwitV",
+    "icon_with_text_background_Q6XGVt",
+    "after_usage_percentage_LgVc6a",
+    "image_banner_bQXLjQ",
+    "ae9f9b9e-5628-46a6-8d8c-366c33514f8a",
+    "image_banner_fgnKdd",
+    "autoloop_video_C9tHCB",
+    "image_banner_4AtUwz",
+    "add_cart_btn_NNbxn3",
+    "29caacd9-11f3-4c9b-b0d9-484a2a7b07b7",
+    "c2ffebe9-bda4-489c-9abf-d0e422d2abc5"
+  ]
+}

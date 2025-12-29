@@ -1,0 +1,11 @@
+.custom_ingredients .main_text .heading { font-size: calc(var(--font-heading-scale) * 2.8rem); text-transform: uppercase; margin-bottom: 30px; max-width: 300px; }
+.custom_ingredients .main_text .subtext { font-size: calc(var(--font-body-scale) * 1.4rem); line-height: 18px; margin-top: 0; margin-bottom: 20px; }
+.custom_ingredients .main_ingredients_block {  background-repeat: no-repeat; background-position: center; display: grid; grid-template-columns: repeat(2, 1fr); gap: 50px; padding: 30px 0;}
+.custom_ingredients .main_ingredients_block .txt_wrap .heading_wrap { margin-bottom: 10px; }
+.custom_ingredients .main_ingredients_block .txt_wrap .heading_wrap .block_heading { font-size: calc(var(--font-heading-scale) * 1.8rem); line-height: 23px; display: flex; align-items: flex-start; gap: 5px; }
+.custom_ingredients .main_ingredients_block .txt_wrap .heading_wrap .icon_last,
+.custom_ingredients .main_ingredients_block .txt_wrap .heading_wrap .icon_first { width: 23px; height: 23px; min-width: 23px; border-radius: 100%; background-color: #ff007e; padding: 5px; box-sizing: border-box; display: inline-flex; }
+.custom_ingredients .main_ingredients_block .txt_wrap .heading_wrap svg { display: block; }
+.custom_ingredients .main_ingredients_block .txt_wrap:nth-child(even) .heading_wrap .block_heading { display: block; }
+.custom_ingredients .main_ingredients_block .txt_wrap:nth-child(even) .heading_wrap .block_heading .icon_first { margin-right: 5px; }
+.custom_ingredients .main_ingredients_block .txt_wrap .content .block_subtext { margin: 0; }

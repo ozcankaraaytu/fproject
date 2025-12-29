@@ -1,0 +1,97 @@
+{% style %}
+  #section-{{ section.id }}{
+    background-image: url("{% if section.settings.background-image != blank %}{{ section.settings.background-image | image_url }}{% endif %}");
+  }
+{% endstyle %}
+
+<div
+  id="section-{{ section.id }}"
+  class="after-usage-percentage {% if section.settings.desktop_hide %} desktop_hide{% endif %} {% if section.settings.mobile_hide %} mobile_hide{% endif %}"
+>
+  <div class="usage-percentage-header">{{ section.settings.heading }}</div>
+  <div class="usage-block-wrapper">
+    {% for block in section.blocks %}
+      <div class="usage-block">
+        <div class="usage-content-wrapper">
+          {% if block.settings['top-banner'] != blank %}
+            <div class="usage-top-banner">
+              {{ block.settings['top-banner'] }}
+              <span class="percentage-arrow">{{ block.settings.percentage }}%</span>
+            </div>
+          {% endif %}
+          <div class="usage-content">
+            {{ block.settings['usage-content'] }}
+          </div>
+        </div>
+        {% if block.settings.image != blank -%}
+          <img class="usage-image" src="{{ block.settings.image | image_url }}">
+        {%- endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "After Usage Percentage",
+  "settings": [
+    {
+      "type":"checkbox",
+      "id":"desktop_hide",
+      "label":"Desktop hide"
+    },
+    {
+      "type":"checkbox",
+      "id":"mobile_hide",
+      "label":"Mobile hide"
+    },
+    {
+      "type": "image_picker",
+      "id": "background-image",
+      "label": "Background Image"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "usage-block",
+      "name": "Usage Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "top-banner",
+          "label": "Top Banner"
+        },
+        {
+          "type": "range",
+          "id": "percentage",
+          "label": "Percentage",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 0
+        },
+        {
+          "type": "richtext",
+          "id": "usage-content",
+          "label": "Usage Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "After Usage Percentage"
+    }
+  ]
+}
+{% endschema %}

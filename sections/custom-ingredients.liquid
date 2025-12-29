@@ -1,0 +1,233 @@
+{{ 'custom-ingredients.css' | asset_url | stylesheet_tag }}
+ <style>
+        #section-{{ section.id }}{
+          background-color: {% if section.settings.bg_color != blank %}{{ section.settings.bg_color }}{% else %}transparent{% endif %};
+          padding-top: {{ section.settings.section_padding_top }}px;
+          padding-bottom: {{ section.settings.section_padding_bottom }}px;
+          margin-top: {{ section.settings.section_margin_top }}px;
+          margin-bottom: {{ section.settings.section_margin_bottom }}px;
+        }
+        
+        @media (max-width: 767px) {
+          #section-{{ section.id }}{
+            padding-top: {{ section.settings.section_padding_top_mobile }}px;
+            padding-bottom: {{ section.settings.section_padding_bottom_mobile }}px;
+            margin-top: {{ section.settings.section_margin_top_mobile }}px;
+            margin-bottom: {{ section.settings.section_margin_bottom_mobile }}px;
+          }
+        }
+      </style>
+<div id="section-{{ section.id }}" class="custom_ingredients  {% if section.settings.desktop_hide %}desktop_hide{% endif %} {% if section.settings.mobile_hide %}mobile_hide{% endif %}" >
+	<div class="wrap_ingredients_block  {% if section.settings.show_full_width %}page-width-full{% else %}page-width{% endif %}">
+      <div class="main_ingredients_heading" >
+          {%- if section.settings.heading  != blank  or  section.settings.subtext != blank -%}
+              <div class="main_text">
+                  {%- if section.settings.heading  != blank -%}
+                      <h2 class="heading">{{section.settings.heading}}</h2>
+                  {%- endif -%}
+                  {%- if section.settings.subtext  != blank -%}
+                      <p class="subtext">{{section.settings.subtext}}</p>
+                  {%- endif -%}
+              </div>
+          {%- endif -%}
+      </div>
+    {%- if section.blocks.size > 0   -%}
+      <div class="main_ingredients_block" {%- if section.settings.image  != blank -%} style="background-image: url('{{ section.settings.image.src | img_url: 'master'}}');" {% endif%}>
+        {%- for block in section.blocks -%}
+            {%- if  block.settings.titles != blank or block.settings.Subtexts != blank -%}
+              <div class="txt_wrap">
+                {%- if  block.settings.titles != blank-%}
+                  <div class="heading_wrap">
+                    <h2 class="block_heading">{%- if block.settings.icon_show -%}{%- if block.settings.icon_first -%}<span class="icon_first">{% render 'icon-plus'%}</span>
+                    {{block.settings.titles}}{% else %}{{block.settings.titles}}<span class="icon_last">{% render 'icon-plus'%}</span>{% endif%}{% else %}{{block.settings.titles}}{% endif%}</h2>
+                  </div>
+                {%- endif -%}
+
+                {%- if  block.settings.Subtexts != blank-%}
+                  <div class="content">
+                    <p class="block_subtext">
+                        {{  block.settings.Subtexts }}
+                    </p>
+                  </div>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Custom ingredients",
+    "settings": [
+    {
+        "type":"checkbox",
+        "id":"desktop_hide",
+        "label":"Desktop hide"
+    },
+    {
+        "type":"checkbox",
+        "id":"mobile_hide",
+        "label":"Mobile hide"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_full_width",
+      "label": "Full width"
+    },
+    {
+        "type": "inline_richtext",
+        "id": "heading",
+        "label": "Heading"
+    },
+    {
+        "type": "inline_richtext",
+        "id": "subtext",
+        "label": "Sub text"
+    },
+    {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Background image"
+    },
+    {   
+    "type": "header",
+    "content": "For desktop device"
+    },
+    {
+    "type": "range",
+    "id": "section_padding_top",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label": "Padding top",
+    "unit": "px",
+    "default": 0
+    },
+    {
+    "type": "range",
+    "id": "section_padding_bottom",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label":  "Padding bottom",
+    "unit": "px",
+    "default": 100
+    },
+    {
+    "type": "range",
+    "id": "section_margin_top",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label": "Margin top",
+    "unit": "px",
+    "default": 0
+    },
+    {
+    "type": "range",
+    "id": "section_margin_bottom",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label": "Margin bottom",
+    "unit": "px",
+    "default": 100
+    },
+    {
+    "type": "header",
+    "content": "For mobile device"
+    },
+    {
+    "type": "range",
+    "id": "section_padding_top_mobile",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label":"Padding top",
+    "unit": "px",
+    "default": 0
+    },
+    {
+    "type": "range",
+    "id": "section_padding_bottom_mobile",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label": "Padding bottom",
+    "unit": "px",
+    "default": 100
+    },
+    {
+    "type": "range",
+    "id": "section_margin_top_mobile",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label": "Margin top",
+    "unit": "px",
+    "default": 0
+    },
+    {
+    "type": "range",
+    "id": "section_margin_bottom_mobile",
+    "min": 0,
+    "max": 150,
+    "step": 5,
+    "label":"Margin bottom",
+    "unit": "px",
+    "default": 100
+    }
+
+],
+    "blocks": [
+{
+    "type": "text",
+    "name": "Text",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "icon_show",
+        "label": "Icon show",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "icon_first",
+        "label": "Icon first",
+        "default": false
+      },
+      {
+          "type": "text",
+          "id": "titles",
+          "label": "Title"
+      },
+      {
+          "type": "inline_richtext",
+          "id": "Subtexts",
+          "label": "Title"
+      }
+    ]
+}
+  ],
+    "presets":[
+      {
+      "name":"Custom ingredients"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

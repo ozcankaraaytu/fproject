@@ -1,0 +1,162 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.dk_padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.dk_padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+.section-{{ section.id }}-bg_color{
+background: {{ section.settings.bg_color }};
+}
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.mb_padding_top }}px;
+      padding-bottom: {{ section.settings.mb_padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+
+
+<div class="custom-banner section-{{ section.id }}-padding section-{{ section.id }}-bg_color {% if section.settings.hide_in_desktop %} desktop_hide {% endif %} {% if section.settings.hide_in_mobile %} mobile_hide {% endif %}">
+  <a href="{% if section.settings.url != blank %}{{ section.settings.url }}{% else %}javascript:void(0){% endif %}">        
+    {%- if section.settings.dk_image != blank -%}
+      <img class="{%- if section.settings.hide_mobile -%}mobile_hide{%- endif -%}" src="{{ section.settings.dk_image | img_url : 'master' }}" loading="lazy">
+    {%- endif -%}
+
+    {%- if section.settings.mb_image != blank -%}
+      {%- if section.settings.hide_desktop -%}
+        {% assign image_class = 'desktop_hide' %}      
+      {%- endif -%}
+      {%- assign image_height = section.settings.mb_image.width | divided_by: section.settings.mb_image.aspect_ratio -%}
+      {{ section.settings.mb_image | image_url: width: 1500 | image_tag:
+        loading: 'lazy',
+        width: section.settings.mb_image.width,
+        class: image_class,
+        sizes: sizes,
+        widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+        alt: section.settings.mb_image.alt | escape
+      }}
+      {% comment %} <img class="{%- if section.settings.hide_desktop -%}desktop_hide{%- endif -%}" src="{{ section.settings.mb_image | img_url : 'master' }}" loading="lazy"> {% endcomment %}
+    {%- endif -%}    
+  </a>
+  {%- if section.settings.bottom_text != blank -%}
+    <div class="bottm_text">
+        {{ section.settings.bottom_text }}
+    </div>
+  {%- endif -%}
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Custom Banner Section",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+            "type": "checkbox",
+            "id": "hide_in_desktop",
+            "label": "Show Only Mobile",
+            "default": false
+        },
+        {
+            "type": "checkbox",
+            "id": "hide_in_mobile",
+            "label": "Show Only Desktop",
+            "default": false
+        },
+    {
+        "type": "color",
+        "id": "bg_color",
+        "label": "color",
+        "default": "#ffffff",
+        "info": "Background Color"
+    },
+    {
+        "type": "checkbox",
+        "id": "hide_mobile",
+        "label": "Show Image Only Desktop",
+        "default": false
+    },
+    {
+        "type": "image_picker",
+        "id": "dk_image",
+        "label": "Desktop Image"
+    },
+    {
+        "type": "checkbox",
+        "id": "hide_desktop",
+        "label": "Show Image Only Mobile",
+        "default": false
+    },
+        {
+        "type": "image_picker",
+        "id": "mb_image",
+        "label": "Mobile Image"
+    },
+    {
+        "type": "url",
+        "id": "url",
+        "label": "link"
+    },
+{
+    "type": "html",
+    "id": "bottom_text",
+    "label": "Bottom Text",
+    "default": "<p>ORGANIC INGREDIENTS-PACKED SOAP BAR FOR GRAY HAIR REMOVAL</p>"
+},
+        {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+{
+      "type": "range",
+      "id": "dk_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "dk_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop Padding Bottom",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mb_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "mb_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile Padding Bottom",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Banner Section"
+    }
+  ]
+}
+{% endschema %}

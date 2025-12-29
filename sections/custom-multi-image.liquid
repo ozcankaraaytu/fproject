@@ -1,0 +1,187 @@
+{%- assign imageBlock = section.blocks | where: 'type', 'image' -%}
+{%- if imageBlock.size > 0 -%}
+  <div class="custom_multi_image_main{% if section.settings.desktop_hide %} desktop_hide{% endif %}{% if section.settings.mobile_hide %} mobile_hide{% endif %}" id="section-{{ section.id }}">
+    <div class="{% if section.settings.show_full_width %}page-width-full{% else %}page-width{% endif %}">
+      <style>
+        #section-{{ section.id }}{
+          background-color: {% if section.settings.bg_color != blank %}{{ section.settings.bg_color }}{% else %}transparent{% endif %};
+          padding-top: {{ section.settings.section_padding_top }}px;
+          padding-bottom: {{ section.settings.section_padding_bottom }}px;
+          margin-top: {{ section.settings.section_margin_top }}px;
+          margin-bottom: {{ section.settings.section_margin_bottom }}px;
+        }
+        
+        @media (max-width: 767px) {
+          #section-{{ section.id }}{
+            padding-top: {{ section.settings.section_padding_top_mobile }}px;
+            padding-bottom: {{ section.settings.section_padding_bottom_mobile }}px;
+            margin-top: {{ section.settings.section_margin_top_mobile }}px;
+            margin-bottom: {{ section.settings.section_margin_bottom_mobile }}px;
+          }
+        }
+      </style>
+
+      <div class="custom_multi_image_box">
+        {%- for block in imageBlock -%}
+        {%- if block.settings.image != blank -%}
+          <div class="image_item">
+            {%- assign image_height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio -%}
+            <a href="{% if block.settings.image_url != blank %}{{ block.settings.image_url }}{% else %}javascript:void(0){% endif %}">
+              {{ block.settings.image | image_url: width: 1500 | image_tag:
+                loading: 'lazy',
+                width: block.settings.image.width,
+                height: image_height,
+                class: 'image_item',
+                sizes: sizes,
+                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                alt: block.settings.image.alt | escape
+              }}
+            </a>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+      </div>
+
+    </div>
+  </div>
+{%- endif -%}
+
+
+{% schema %}
+  {
+    "name":"Custom multi image",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "desktop_hide",
+        "label":"Desktop hide"
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile_hide",
+        "label":"Mobile hide"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_full_width",
+        "label": "Full width"
+      },
+      {
+        "type": "header",
+        "content": "For desktop device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Padding top",
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label":  "Padding bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_margin_top",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Margin top",
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_margin_bottom",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Margin bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "For mobile device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_mobile",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label":"Padding top",
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_mobile",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Padding bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_margin_top_mobile",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Margin top",
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_margin_bottom_mobile",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label":"Margin bottom",
+        "unit": "px",
+        "default": 100
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "url",
+            "id": "image_url",
+            "label": "Image url"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"Custom multi image"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,8 @@
+.icon_with_text .main_text .heading { font-size: calc(var(--font-heading-scale) * 1.4rem); margin-bottom: 20px; }
+.icon_with_text .multiple_icon_text { display: grid; gap: 30px; grid-template-columns: repeat(3, 1fr); margin-bottom: 30px; }
+.icon_with_text .multiple_icon_text .icon_text .icon_image { width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; margin: 0 auto; }
+.icon_with_text .multiple_icon_text .icon_text .icon_image img { max-width: 100%; }
+.icon_with_text .multiple_icon_text .icon_text .icon_content .text {  margin-top: 10px; margin-bottom: 0; text-align: center; font-size: calc(var(--font-body-scale) * 1.2rem); line-height: normal; }
+.icon_with_text .extra_image_text { font-size: calc(var(--font-body-scale) * 1.2rem); line-height: normal; display: flex; gap: 10px; padding: 7px 0; border: 1px solid #000; border-left: 0; border-right: 0; margin: 0; font-weight: var(--font-weight-Semibold); font-family: var(--Metropolis-Semibold); color: #000; }
+.icon_with_text .extra_image_text img { max-width: 20px; min-width: 20px; width: 100%; object-fit: contain; height: auto; }
+.icon_with_text .extra_image_text .extra_text { margin: 0; }

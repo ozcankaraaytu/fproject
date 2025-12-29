@@ -1,0 +1,178 @@
+{%- if section.settings.heading != blank or section.blocks.size > 0 -%}
+  {%- style -%}
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.dk_padding_top }}px;
+      padding-bottom: {{ section.settings.dk_padding_bottom }}px;
+    }
+
+    @media screen and (min-width: 750px) {
+      .section-{{ section.id }}-padding {
+        padding-top: {{ section.settings.mb_padding_top }}px;
+        padding-bottom: {{ section.settings.mb_padding_bottom }}px;
+      }
+    }
+  {%- endstyle -%}
+
+  <div class="custom-review page-width section-{{ section.id }}-padding {% if section.settings.hide_in_desktop %} desktop_hide {% endif %} {% if section.settings.hide_in_mobile %} mobile_hide {% endif %} ">
+    {%- if section.settings.heading != blank -%}
+      <h2>{{ section.settings.heading }}</h2>
+    {%- endif -%}
+    <div class="review_slide  review_slider--{{ section.id }}">
+      {%- for block in section.blocks -%}
+        <div>{{ block.settings.custom_liquid }}</div>
+      {%- endfor -%}
+    </div>
+  </div>
+
+  <script>
+    theme_custom.reviewSlider = function(){
+      $('.review_slider--{{ section.id }}').slick({
+        dots: {{ section.settings.dots_enabled }},
+        arrows : {{ section.settings.arrow_enabled }},
+        autoplay: {{ section.settings.autoplay_enabled }},
+        infinite: {{ section.settings.infinite_enabled }},
+        slidesToShow: {{ section.settings.slide_to_show }},
+        slidesToScroll: {{ section.settings.slide_to_scroll }},
+      });
+    }
+  </script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Custom Slider",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "hide_in_desktop",
+      "label": "Show Only Mobile",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_in_mobile",
+      "label": "Show Only Desktop",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "CUSTOMER REVIEWS"
+    },
+    {
+      "type": "header",
+      "content": "Slider Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "dots_enabled",
+      "label": "Show Dots",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "arrow_enabled",
+      "label": "Show Arrow",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay_enabled",
+      "label": "Autoplay",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "infinite_enabled",
+      "label": "infinite",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "slide_to_show",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Slide To Show",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "slide_to_scroll",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Slide To Scroll",
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "dk_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Desktop Padding Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "dk_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Desktop Padding Bottom",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mb_padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile Padding Top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "mb_padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Mobile Padding Bottom",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "Review",
+      "name": "Review Block",
+      "settings": [
+        {
+          "type": "liquid",
+          "id": "custom_liquid",
+          "label": "Custom Liquid"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Slider"
+    }
+  ]
+}
+{% endschema %}

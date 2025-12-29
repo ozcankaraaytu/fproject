@@ -1,0 +1,440 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "advertorial_7AcmL9": {
+      "type": "advertorial",
+      "blocks": {
+        "richtext_q38Re4": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<h6>Personal Care &gt; Trending &gt; Best Offers</h6>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "richtext_HrzQdf": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "header",
+            "richtext": "<h1>What Do Dermatologists Know About Anti-Aging That You Don't? Learn Why So Many People Are Raving About This <strong>Anti-Aging Shower Gel?</strong></h1>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "richtext_YD8tp9": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<p>By Jessica Lloyd | May 24, 2023 | 11:11 am EDT</p>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "image_z9XUXD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gorsel_1.jpg",
+            "bottom-text": "<p>Dermatologists like Dr. Christine Sally have been recommending this new Anti-Aging Shower Gel to their patients.</p>",
+            "background-color": "#f9f9f9"
+          }
+        },
+        "richtext_aUMwNq": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<p>If you suffer from saggy skin and wrinkles like I do, you know how <strong>difficult it can be to get rid of them.</strong> Traditional treatments such as prescription medications and collagen creams can be time-consuming, expensive, and even ineffective.</p><p>I’ve been dealing with wrinkles on my body for years, and it’s been a frustrating and embarrassing experience. I’ve tried everything from prescription medications to over-the-counter creams, but nothing seemed to work.</p><p>That is, until I discovered an anti-aging shower gel that has been a game-changer for me. It’s a new product on the market that <strong>dermatologists are raving about.</strong> A breakthrough anti-aging gel that promises to <strong>tighten your skin with only showering. Yes it’s true, showering is enough.</strong></p>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "image_dr6qxH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gorsel_2.jpg",
+            "bottom-text": "",
+            "background-color": ""
+          }
+        },
+        "richtext_y7t8xW": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<h1>What Is The ShowAge Anti-Aging Shower Gel?</h1>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "richtext_Gjda37": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<p>One day, my husband and I were watching a popular TV show where a dermatologist was sharing some tips for keeping your body away from wrinkles. I had always thought that dermatologists were only for serious skin problems, but it turns out that they’re body and skin specialists who know what works and what doesn’t when it comes to treating wrinkles and saggy skin.<br/><br/>But back to the TV show – the Dermatologist’s name was Dr. Christine Sally, she’s based in New York and was introduced as the World’s Leading Dermatologist.</p>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "image_QkiJGJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gorsel_3.jpg",
+            "bottom-text": "<p>Dr. Christine Sally is a New York City Dermatologist, Skin Elasticity Expert and Global Leader in Skin Science and Rehabilitation and strongly recommends this gel to her patients.</p>",
+            "background-color": "#f9f9f9"
+          }
+        },
+        "richtext_9YQrp7": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<p>Among several tips about skin care and how important it is for your overall health, Dr. Christine Sally approached the wrinkle theme and her recommended solution, the moment when my husband looked at me and turned up the volume:</p><p><em><strong>\"ShowAge Anti-Aging Gel is a powerful and natural way to treat and manage wrinkles and saggy skin. Most of my patients see amazing results quickly. There’s no side effects, no pain, and no burning. –Dr. Christine Sally.\"</strong></em></p>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "video_9KHMAp": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/advertorial-video.mp4",
+            "bottom-text": "<p>Easy to use and very effective on wrinkles.</p>",
+            "background-color": "#f9f9f9"
+          }
+        },
+        "richtext_eH4ag7": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "advertorial_link1",
+            "richtext": "<p>As someone who has spent countless hours applying useless creams on my skin, without any luck, that amazing recommendation came at the perfect timing!</p><p>My husband immediately took his laptop and searched for this Anti Aging Shower Gel – less than 5 mins later, he had ordered a BUY 3 GET 1 FREE Pack with an amazing 60% OFF deal, through the <a href=\"/products/showage-anti-aging-shower-gel\" title=\"SHOWAGE ANTI-AGING SHOWER GEL\"><strong>official website.</strong></a></p><p>And I’ll share a bit more of my thoughts and how happy I am for this  shower gel below:</p>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "richtext_kR9Jhw": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<h1>What Are The ShowAge Anti-Aging Shower Gel's Main Benefits And Why Dermatologists Are Raving About It?</h1>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "image_LRGzN3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gorsel_5.jpg",
+            "bottom-text": "",
+            "background-color": ""
+          }
+        },
+        "richtext_JDMnff": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<p>Exactly five days after we placed the order, we received the pack at our doorstep. The company really fulfills their FAST SHIPPING claim.<br/><br/>As soon as we got it out of the box, we were surprised with the overall packaging. It’s looking good for an anti-aging shower gel treatment and the perfect size for easy handling.</p><p>Immediately after opening one gel, I could notice two things:</p><p><strong>1. It smells good,</strong> not like the horrible chemical smell some of the products I tried before had.<br/><br/><strong>2. The consistency looked amazing,</strong> it’s very smooth and not sticky! The Showage Anti-Aging Shower Gel provides an easy and mess-free application.</p>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "video_KDBLFn": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/advertorial-video2.mp4",
+            "bottom-text": "",
+            "background-color": ""
+          }
+        },
+        "richtext_4Fqy8z": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<p>I started using it right away – the first application was super easy and completely mess-free! Some of the main benefits and features I could get from the ShowAge Anti-Aging Shower Gel right after reading the label and understanding better the products (and the competition):</p>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "checkmark_list_mqwiBN": {
+          "type": "checkmark-list",
+          "settings": {
+            "block-id": "",
+            "checkmark-list": "<ul><li><strong>No synthetics,</strong> natural extracts and suitable for daily use.</li><li><strong>Made in the USA.</strong></li><li><strong>USDA Certified Organic</strong><br/></li></ul>"
+          }
+        },
+        "image_GPPpqx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gorsel_7.jpg",
+            "bottom-text": "",
+            "background-color": ""
+          }
+        },
+        "checkmark_list_NApk3A": {
+          "type": "checkmark-list",
+          "settings": {
+            "block-id": "",
+            "checkmark-list": "<ul><li>Undoubtedly <strong>the best</strong> the best anti-aging gel on the market.</li><li><strong>Free</strong> from dairy, soy, corn, yeast, artificial colors, and preservatives.</li><li><strong>No</strong>-GMO</li><li><strong>No</strong>-heated</li><li><strong>No</strong>-irritation</li><li><strong>Amazing prices</strong> and sale opportunities.</li><li><strong>All-natural</strong>, proven formula for effective skin healing.</li><li><strong>Perfect size</strong> for accurate application</li><li><strong>Fresh feeling</strong>, in the shower.</li><li><strong>Fast Shipping, 60-days</strong> money back guarantee, friendly customer service</li></ul>"
+          }
+        },
+        "richtext_twb8Yj": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<h1>The Moment Of Truth: Did The ShowAge Anti Aging Shower Gel Really Work With My Saggy Skin?</h1>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "image_Tj3V7P": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gorsel_8.jpg",
+            "bottom-text": "<p>Easy to use, safe, fresh, and effective! Thank you Dr. Christine (and my husband) for the advice!</p>",
+            "background-color": "#f9f9f9"
+          }
+        },
+        "richtext_km37ab": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<p>Let us remove any doubts you may be having right now — <strong>The Showage Anti-Aging Shower Gel really does work!</strong></p><p>First, let me tell you again how does it work – or how <strong>EASY</strong> it is to apply:<br/><br/>After rinsing your skin with warm water, take a little of the product and massage on your wrinkled area. Using a pouch will increase the effect.</p><p><br/><strong>After testing it for two weeks, I could already notice great results!</strong></p><p>I also started checking some online reviews and other patients who used the product, and the results are awesome! It’s amazing: after just a few weeks of use, the claim is that they were not dealing with wrinkles or stains on their skin anymore.<br/><br/></p>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "video_dMkEHX": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/advertorial-video3.mp4",
+            "bottom-text": "<p>Visible results with a natural and effective shower gel. That’s why all Dermatologists have been recommending this product!</p>",
+            "background-color": "#f9f9f9"
+          }
+        },
+        "richtext_gNC4qM": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<h1>How Can I Make Sure I’m Getting The Amazing ShowAge Anti-Aging Shower Gel Before It Sells Out?</h1>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "image_4FBbic": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gorsel_10.jpg",
+            "bottom-text": "",
+            "background-color": ""
+          }
+        },
+        "richtext_kpmAPp": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<p>Since we aren’t the only ones who’ve crossed roads with this near-miracle product (specially after the TV show), the ShowAge Anti-Aging Shower Gel is rapidly running out of stock. They’ve pretty much gone viral, so don’t miss this amazing deal.</p>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "checkmark_list_mGWYWK": {
+          "type": "checkmark-list",
+          "settings": {
+            "block-id": "checkmark-list1",
+            "checkmark-list": "<h3><strong>This is How to Order ShowAge Anti-Aging Treatment Shower Gel</strong></h3><ul><li>Go to the Showage Anti-Aging Gel product page. <a href=\"/products/showage-anti-aging-shower-gel\" title=\"SHOWAGE ANTI-AGING SHOWER GEL\"><strong>We've linked here.</strong></a></li><li>Click on the BUY NOW big green button</li><li>Select your desired units package and payment option. Make sure you check out the <a href=\"/products/showage-anti-aging-shower-gel\" title=\"SHOWAGE ANTI-AGING SHOWER GEL\"><strong>BUY 3 GET 1 FREE</strong></a> pack (up to 60% OFF on this pack!)</li></ul>"
+          }
+        },
+        "richtext_gEwxbw": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<p>Once your order has been placed, you will receive an order confirmation email. After that, it will rapidly ship from the USA warehouse.</p><p><br/>Yes, <strong>it is located in the United States,</strong> so you are guaranteed to receive the best shower gel as quickly as possible!<br/><br/>ShowAge Anti-Aging Shower Gel also comes with a <strong>60 days results or refund guarantee</strong> – their super friendly customer service team will make sure to assist you if you are not happy with your product for any reason.<br/><br/></p>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "button_niKrjw": {
+          "type": "button",
+          "settings": {
+            "button-label": "Apply Discount & Check Availability",
+            "button-url": "shopify://products/showage-anti-aging-shower-gel",
+            "button-background": "#19af42"
+          }
+        },
+        "richtext_fParra": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<h1>Still Not Sure About Buying Your ShowAge Anti-Aging Shower Gel? Check These Online Reviews</h1>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "image_HCWwxx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gorsel_11.jpg",
+            "bottom-text": "",
+            "background-color": ""
+          }
+        },
+        "richtext_PyTHii": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<p>People <strong>really love this gel</strong> (myself included). Here are some of the reviews I’ve seen:</p>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "image_PFrht9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gorsel_13.jpg",
+            "bottom-text": "",
+            "background-color": ""
+          }
+        },
+        "richtext_rDzjQn": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "advertorial_link2",
+            "richtext": "<p>To read more reviews and order your shower gel, <a href=\"/products/showage-anti-aging-shower-gel\" title=\"SHOWAGE ANTI-AGING SHOWER GEL\"><strong>visit their website.</strong></a></p>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "richtext_ipMJWk": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "",
+            "richtext": "<h1>Conclusion - It’s A Breeze: Get The ShowAge Anti-Aging Shower Gel Today</h1><p>By now, it’s pretty obvious what our final verdict is — the ShowAge Anti-Aging Shower Gel <strong>is the best shower gel out there.</strong></p><p>It’s different from other gels and creams. You can use it as a normal shower gel. It gives no harm to your skin. Completely natural ingredients give you a fresh shower.</p><p>Plus, there's a 60% discount! (I don’t know how long this deal will be around.)</p><p>If you’re curious, you should grab one now because there’s a 60-day money-back guarantee, but you can’t go back and get the sale later, so to me it’s a breeze.</p>",
+            "text-align": "left",
+            "text-color": ""
+          }
+        },
+        "image_fyLtWa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/gorsel_12.jpg",
+            "bottom-text": "",
+            "background-color": ""
+          }
+        },
+        "button_grHLUw": {
+          "type": "button",
+          "settings": {
+            "button-label": "Apply Discount & Check Availability",
+            "button-url": "shopify://products/showage-anti-aging-shower-gel",
+            "button-background": "#19af42"
+          }
+        },
+        "richtext_Dztqjg": {
+          "type": "richtext",
+          "settings": {
+            "block-id": "limited-offer",
+            "richtext": "<h2>LIMITED-TIME OFFER</h2><h3>May 24, 2023</h3><p>Since this Anti-Aging Shower Gel was featured by Dr. Christine and recommended by Dermatologists, it got trendy in the US and viral on social media. The demand has been increasing considerably and its inventory has been flying off the shelves.<br/><br/>Their current supply is quickly running low! Get yours with <strong>60% OFF + FREE SHIPPING before it's too late.</strong></p><p>NOTE: This deal is NOT available on Amazon or eBay.</p><p><a href=\"/products/showage-anti-aging-shower-gel\" title=\"SHOWAGE ANTI-AGING SHOWER GEL\">Check Availability »</a></p>",
+            "text-align": "center",
+            "text-color": ""
+          }
+        },
+        "image_4hbnfL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_fdce691c-55d3-4d78-ab23-d134e2c756c7.jpg",
+            "bottom-text": "",
+            "background-color": ""
+          }
+        },
+        "image_zQ97iP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/2_73b01e2a-c0f7-47ce-83da-c8f0382ca5cd.jpg",
+            "bottom-text": "",
+            "background-color": ""
+          }
+        },
+        "image_qXKGNX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3_23e537dc-62a0-4e64-bb57-ba9a666d11ad.jpg",
+            "bottom-text": "",
+            "background-color": ""
+          }
+        }
+      },
+      "block_order": [
+        "richtext_q38Re4",
+        "richtext_HrzQdf",
+        "richtext_YD8tp9",
+        "image_z9XUXD",
+        "richtext_aUMwNq",
+        "image_dr6qxH",
+        "richtext_y7t8xW",
+        "richtext_Gjda37",
+        "image_QkiJGJ",
+        "richtext_9YQrp7",
+        "video_9KHMAp",
+        "richtext_eH4ag7",
+        "richtext_kR9Jhw",
+        "image_LRGzN3",
+        "richtext_JDMnff",
+        "video_KDBLFn",
+        "richtext_4Fqy8z",
+        "checkmark_list_mqwiBN",
+        "image_GPPpqx",
+        "checkmark_list_NApk3A",
+        "richtext_twb8Yj",
+        "image_Tj3V7P",
+        "richtext_km37ab",
+        "video_dMkEHX",
+        "richtext_gNC4qM",
+        "image_4FBbic",
+        "richtext_kpmAPp",
+        "checkmark_list_mGWYWK",
+        "richtext_gEwxbw",
+        "button_niKrjw",
+        "richtext_fParra",
+        "image_HCWwxx",
+        "richtext_PyTHii",
+        "image_PFrht9",
+        "richtext_rDzjQn",
+        "richtext_ipMJWk",
+        "image_fyLtWa",
+        "button_grHLUw",
+        "richtext_Dztqjg",
+        "image_4hbnfL",
+        "image_zQ97iP",
+        "image_qXKGNX"
+      ],
+      "custom_css": [
+        "#header strong {background-color: #fff7c1;}",
+        "#advertorial_link1 a {color: #3366ff; text-decoration: unset;}",
+        "#checkmark-list1 a {color: #3366ff; text-decoration: unset;}",
+        "#advertorial_link2 a {color: #3366ff; text-decoration: unset;}",
+        "#limited-offer {background-color: #fff7c1; padding: 2rem;}",
+        "#limited-offer a {width: 95%; max-width: 350px; background-color: #19af42; display: block; border-radius: 6px; text-decoration: unset; text-align: center; color: #fff; font-size: 16px; padding: 20px 0; font-weight: 600; margin: 30px auto;}"
+      ],
+      "settings": {
+        "padding-top": 32,
+        "padding-Bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "advertorial_7AcmL9"
+  ]
+}

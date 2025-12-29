@@ -1,0 +1,136 @@
+{% style %}
+  #text-with-notch--{{ section.id }} {
+    padding-top: {{ section.settings.section_padding_top }}px;
+    padding-bottom: {{ section.settings.section_padding_bottom }}px;
+    margin-top: {{ section.settings.section_margin_top }}px;
+    margin-bottom: {{ section.settings.section_margin_bottom }}px;
+  }
+{% endstyle %}
+
+<div
+  id="text-with-notch--{{ section.id }}"
+  class="text-with-notch{% if section.settings.desktop_hide %} desktop_hide{% endif %}{% if section.settings.mobile_hide %} mobile_hide{% endif %}"
+  style="background-color: {{ section.settings.bgcolor }}"
+>
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'richtext' %}
+        {% assign text-align = block.settings['text-align'] %}
+        {% assign text-color = block.settings['text-color'] %}
+        <div style="text-align: {{ text-align }}; color: {{ text-color }}" {{ block.shopify_attributes }}>
+          {{ block.settings.richtext }}
+        </div>
+    {% endcase %}
+  {% endfor %}
+</div>
+
+<style>
+    .text-with-notch p {
+      margin: 0;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Text With Notch",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "desktop_hide",
+      "label":"Desktop hide"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_hide",
+      "label":"Mobile hide"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Background Color"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "label": "Padding top",
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "label":  "Padding bottom",
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "section_margin_top",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "label": "Margin top",
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "section_margin_bottom",
+      "min": 0,
+      "max": 150,
+      "step": 2,
+      "label": "Margin bottom",
+      "unit": "px",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "richtext",
+      "name": "Rich Text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "richtext",
+          "label": "Rich Text"
+        },
+        {
+          "type": "select",
+          "id": "text-align",
+          "label": "Text Align",
+          "options": [
+            {
+              "label": "Left",
+              "value": "left"
+            },
+            {
+              "label": "Center",
+              "value": "center"
+            },
+            {
+              "label": "Right",
+              "value": "right"
+            }
+          ]
+        },
+        {
+          "type": "color",
+          "id": "text-color",
+          "label": "Text Color"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text With Notch"
+    }
+  ]
+}
+{% endschema %}

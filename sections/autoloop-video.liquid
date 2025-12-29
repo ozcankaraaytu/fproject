@@ -1,0 +1,49 @@
+{% assign videoData = section.settings.video %}
+
+<div class=" autoloop-video{% if section.settings.desktop_hide %} desktop_hide{% endif %}{% if section.settings.mobile_hide %} mobile_hide{% endif %}">
+  {% if section.settings.heading != blank %}<div class="video-heading">{{ section.settings.heading }}</div>{% endif %}
+  {% if videoData != blank -%}
+    {{-
+      videoData
+      | video_tag: loop: 'loop', muted: true, playsinline: true, autoplay: true, id: 'featured_video', class: 'autoplay'
+    -}}
+  {%- endif %}
+</div>
+<style>
+  .autoloop-video video {
+    width: 100%;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Autoloop Video",
+  "settings": [
+    {
+      "type":"checkbox",
+      "id":"desktop_hide",
+      "label":"Desktop hide"
+    },
+    {
+      "type":"checkbox",
+      "id":"mobile_hide",
+      "label":"Mobile hide"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video"
+    }
+  ],
+  "presets": [
+      {
+        "name": "Autoloop Video"
+      }
+    ]
+}
+{% endschema %}

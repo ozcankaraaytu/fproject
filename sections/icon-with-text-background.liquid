@@ -1,0 +1,77 @@
+{% assign desktop_hide = section.settings.desktop_hide %}
+{% assign mobile_hide = section.settings.mobile_hide %}
+
+<div class="icon-with-text-background {% if desktop_hide %}desktop_hide{% endif %} {% if mobile_hide %}mobile_hide{% endif %}">
+  {% if section.settings.background != blank -%}
+    <img class="background" src="{{ section.settings.background | image_url }}">
+  {%- endif %}
+  <div class="content">
+    <h1>{{ section.settings.heading }}</h1>
+    {{ section.settings.content }}
+    <div class="icon-with-text-wrapper">
+      {% for block in section.blocks %}
+        <div class="iicon-with-text">
+          <img class="iicon" src="{{ block.settings.icon | image_url }}">
+          <span>{{ block.settings.text }}</span>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Icon With Text Background",
+  "settings": [
+    {
+      "type":"checkbox",
+      "id":"desktop_hide",
+      "label":"Desktop hide"
+    },
+    {
+      "type":"checkbox",
+      "id":"mobile_hide",
+      "label":"Mobile hide"
+    },
+    {
+      "type": "image_picker",
+      "id": "background",
+      "label": "Background"
+    },
+    {
+      "type": "richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon-with-text",
+      "name": "Icon With Text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icon With Text Background"
+    }
+  ]
+}
+{% endschema %}

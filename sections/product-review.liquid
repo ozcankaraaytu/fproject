@@ -1,0 +1,239 @@
+{{ 'product-review-section.css' | asset_url | stylesheet_tag }}
+{%- style -%}
+  #product-review--{{ section.id }}{
+    padding-top: {{ section.settings.section_padding_top }}px;
+    padding-bottom: {{ section.settings.section_padding_bottom }}px;
+    margin-top: {{ section.settings.section_margin_top }}px;
+    margin-bottom: {{ section.settings.section_margin_bottom }}px;
+    background-color: {{ section.settings.bg_color }};
+  }
+  .column_count { display: grid; grid-template-columns: repeat({{ section.settings.column_counts }}, 1fr);}
+  
+  @media (max-width: 767px) {
+    #product-review--{{ section.id }}{
+      padding-top: {{ section.settings.section_padding_top_mobile }}px;
+      padding-bottom: {{ section.settings.section_padding_bottom_mobile }}px;
+      margin-top: {{ section.settings.section_margin_top_mobile }}px;
+      margin-bottom: {{ section.settings.section_margin_bottom_mobile }}px;
+    }
+  }
+{%- endstyle -%}
+{% if product.metafields.custom.product_review != blank %}
+  <div id="product-review--{{ section.id }}" class="custom-product-review-section{% if section.settings.desktop_hide %} desktop_hide{% endif %} {% if section.settings.mobile_hide %} mobile_hide{% endif %}">
+    <div class="page-width">
+      {%- capture data_slick_activation -%}
+        data-slick='{
+          "slidesToShow": {{ section.settings.column_counts }},
+          "slidesToScroll": 1,
+          "dots": true,          
+          "responsive": [
+            {
+              "breakpoint": 991,
+              "settings": {
+                "slidesToShow": 2
+              }
+            },
+            {
+              "breakpoint": 575,
+              "settings": {
+                "slidesToShow": 1
+              }
+            }
+          ]
+        }'
+      {%- endcapture -%}
+      {% if section.settings.title %}
+        <div class="title h2">{{ section.settings.title }}</div>
+      {% endif %}
+      {% assign metafieldKey = product.metafields.custom.product_review %}
+      <div class="product-reviews-list{% if section.settings.show_slider %} product_reviews_slider{% else %} column_count{% endif %}" {{ data_slick_activation }}>
+        {% for ingredient in metafieldKey.value %}
+          <div class="product-review-wrapper">
+            <div class="heading-image-wrap">
+              {% if ingredient.image %}<div class="profile-img"><img src="{{ ingredient.image | img_url:'master' }}"></div>{% endif %}
+              <div class="heading-sub">
+                {% if ingredient.heading %}
+                  <h3> {{ ingredient.heading }}</h3>
+                {% endif %}
+                {% assign review = ingredient.review_count | round %}
+                <ul class="product_review_ratings">
+                {% for i in (1..5) %}
+                  {% if i <= review %}
+                    <li class="star-icon yellow">
+                      <svg viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.5 0L14.0819 7.9463H22.4371L15.6776 12.8574L18.2595 20.8037L11.5 15.8926L4.74047 20.8037L7.32238 12.8574L0.56285 7.9463H8.91809L11.5 0Z"/>
+                      </svg>  
+                    </li>
+                  {% else %}
+                    <li class="star-icon ">
+                      <svg viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.5 0L14.0819 7.9463H22.4371L15.6776 12.8574L18.2595 20.8037L11.5 15.8926L4.74047 20.8037L7.32238 12.8574L0.56285 7.9463H8.91809L11.5 0Z"/>
+                      </svg>  
+                    </li>
+                  {% endif %}
+                {% endfor %}
+                </ul>
+              </div>
+            </div>
+            {% if ingredient.description %}
+              <div class="review-description">{{ ingredient.description }}</div>
+            {% endif %}
+            {% if ingredient.list_of_images %}
+              <div class="review-images-list">
+                {%- for item in ingredient.list_of_images.value -%}
+                  <div class="review-image-list">
+                    <img src="{{ item | img_url:'master' }}">
+                  </div>
+                {%- endfor -%}
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Product review",
+    "enabled_on": {
+        "templates": ["product"]
+      },
+    "settings": [
+      {
+        "type":"checkbox",
+        "id":"desktop_hide",
+        "label":"Desktop hide"
+      },
+      {
+        "type":"checkbox",
+        "id":"mobile_hide",
+        "label":"Mobile hide"
+      },
+      {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Show full width"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_slider",
+        "label": "Enable slider",
+        "default": false
+      },
+      {
+        "type": "range",
+        "id": "column_counts",
+        "label": "Column display per row",
+        "max": 4,
+        "min": 2,
+        "default": 3
+      },
+      {
+        "type": "header",
+        "content": "For desktop device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Padding Top",
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label":  "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_margin_top",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Margin Top",
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_margin_bottom",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Margin Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "For mobile device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_mobile",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label":"Padding Top",
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_mobile",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Padding Bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_margin_top_mobile",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Margin Top",
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_margin_bottom_mobile",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label":"Margin Bottom",
+        "unit": "px",
+        "default": 100
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product review"
+      }
+    ]
+  }
+{% endschema %}

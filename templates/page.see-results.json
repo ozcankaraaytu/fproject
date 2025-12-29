@@ -1,0 +1,190 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "multicolumn_6gQCDC": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_wWj3bW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/see-results_hy1.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JJFgwX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/see-results_hy2.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BPrAfi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/see-results_hy3.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_6FG9Fp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/see-results_hy4.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Fi8x94": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/see-results_hy5.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9j8i4m": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/see-results_hy6.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_yrVUzA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/see-results_hy7.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iyQTz8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/see-results_hy8.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UY8PL8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/see-results_hy9.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wTWQ8J": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/see-results_hy10.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_pNmfLp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/see-results_hy11.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UfWqLD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/see-results_hy12.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_wWj3bW",
+        "column_JJFgwX",
+        "column_BPrAfi",
+        "column_6FG9Fp",
+        "column_Fi8x94",
+        "column_9j8i4m",
+        "column_yrVUzA",
+        "column_iyQTz8",
+        "column_UY8PL8",
+        "column_wTWQ8J",
+        "column_pNmfLp",
+        "column_UfWqLD"
+      ],
+      "settings": {
+        "desktop_hide": false,
+        "mobile_hide": false,
+        "custom_class_section": "",
+        "bg_color": "",
+        "show_full_width": false,
+        "heading": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "section_padding_top": 0,
+        "section_padding_bottom": 100,
+        "section_margin_top": 0,
+        "section_margin_bottom": 100,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 100,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 100
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multicolumn_6gQCDC"
+  ]
+}

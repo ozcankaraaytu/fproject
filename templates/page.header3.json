@@ -1,0 +1,932 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "5f10fe11-5594-4f0c-ba41-502a34860e56": {
+      "type": "custom-banner",
+      "custom_css": [
+        "@media screen and (max-width: 749px) {.bottm_text {display: none; }}"
+      ],
+      "settings": {
+        "hide_in_desktop": false,
+        "hide_in_mobile": false,
+        "bg_color": "#dfdfde",
+        "hide_mobile": true,
+        "dk_image": "shopify://shop_images/index_slider_1.jpg",
+        "hide_desktop": true,
+        "mb_image": "shopify://shop_images/header3.jpg",
+        "url": "shopify://products/showage-anti-aging-shower-gel",
+        "bottom_text": "Showage",
+        "dk_padding_top": 0,
+        "dk_padding_bottom": 0,
+        "mb_padding_top": 0,
+        "mb_padding_bottom": 0
+      }
+    },
+    "autoloop_video_4Wefzb": {
+      "type": "autoloop-video",
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "heading": "",
+        "video": "shopify://files/videos/03.mp4"
+      }
+    },
+    "0d4d6c47-1297-4bca-8f4b-5dee6ba16a92": {
+      "type": "brand-logo",
+      "blocks": {
+        "f58a8b0a-1e35-4dc1-97ca-10c55cf094e7": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/1-ICONS.png",
+            "link": ""
+          }
+        },
+        "3074fa8f-ded0-443d-b874-c167069c5771": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/2-ICONS.png",
+            "link": ""
+          }
+        },
+        "d2bfc244-57d2-46d9-bb10-d688b8ed6e0d": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/3-ICONS.png",
+            "link": ""
+          }
+        },
+        "86d405c0-400e-42e8-a9c1-00187e698f99": {
+          "type": "logo",
+          "settings": {
+            "image": "shopify://shop_images/4-ICONS.png",
+            "link": ""
+          }
+        },
+        "logo_FKM7mM": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/1-ICONS.png",
+            "link": ""
+          }
+        },
+        "logo_LXWRWX": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/2-ICONS.png",
+            "link": ""
+          }
+        },
+        "logo_DzykCp": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/3-ICONS.png",
+            "link": ""
+          }
+        },
+        "logo_JLJzpH": {
+          "type": "logo",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/4-ICONS.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "f58a8b0a-1e35-4dc1-97ca-10c55cf094e7",
+        "3074fa8f-ded0-443d-b874-c167069c5771",
+        "d2bfc244-57d2-46d9-bb10-d688b8ed6e0d",
+        "86d405c0-400e-42e8-a9c1-00187e698f99",
+        "logo_FKM7mM",
+        "logo_LXWRWX",
+        "logo_DzykCp",
+        "logo_JLJzpH"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "bg_color": "#000000",
+        "show_full_width": false,
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 20,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    },
+    "b2c5c21a-d33e-4b55-af6a-a8269975555c": {
+      "type": "custom-image-text",
+      "blocks": {
+        "template--15274131095663__b2c5c21a-d33e-4b55-af6a-a8269975555c-heading-1": {
+          "type": "heading",
+          "settings": {
+            "hide_in_desktop": false,
+            "hide_in_mobile": true,
+            "heading": "<p>IT’S TIME TO TIGHTEN SAGGY SKIN AND REMOVE WRINKLES<br/></p>",
+            "heading_size": "h1"
+          }
+        },
+        "heading_jecARJ": {
+          "type": "heading",
+          "settings": {
+            "hide_in_desktop": true,
+            "hide_in_mobile": false,
+            "heading": "<p><strong>effective</strong> rejuvenating care</p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--15274131095663__b2c5c21a-d33e-4b55-af6a-a8269975555c-text-1": {
+          "type": "text",
+          "settings": {
+            "hide_in_desktop": false,
+            "hide_in_mobile": true,
+            "text": "<p>Showage shower gel can help eliminate wrinkles and blemishes and tighten sagging skin. With regular use, it can prevent the formation of wrinkles and remove wrinkles.</p>",
+            "text_style": "body"
+          }
+        },
+        "heading_RMxtCz": {
+          "type": "heading",
+          "settings": {
+            "hide_in_desktop": false,
+            "hide_in_mobile": true,
+            "heading": "<p>SAFE AND FAST DELIVERY ON TIME<br/></p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_BeF4TR": {
+          "type": "text",
+          "settings": {
+            "hide_in_desktop": false,
+            "hide_in_mobile": true,
+            "text": "<ul><li>Your order will be shipped on the same day. Delivery will be made within 3-5 business days.</li><li><br/>If you are not satisfied, there is a 60 day money back guarantee.</li><li><br/>Our Whatsapp hotline is available 24/7 for your questions and thoughts.</li></ul>",
+            "text_style": "body"
+          }
+        },
+        "text_NfJ68U": {
+          "type": "text",
+          "settings": {
+            "hide_in_desktop": true,
+            "hide_in_mobile": false,
+            "text": "<p>ShowAge, an anti-aging shower gel, eliminates signs of aging by nourishing your skin with it’s special active ingredients <strong>without causing any harm and provides a firmer look.</strong></p>",
+            "text_style": "body"
+          }
+        },
+        "video_AwfR6p": {
+          "type": "video",
+          "settings": {
+            "hide_in_desktop": true,
+            "hide_in_mobile": false,
+            "videosd": "",
+            "mute": true,
+            "yt_option": false,
+            "autoplay": true
+          }
+        },
+        "7c2d64b8-cc81-4126-bbc2-b67757210729": {
+          "type": "video",
+          "settings": {
+            "hide_in_desktop": true,
+            "hide_in_mobile": false,
+            "videosd": "",
+            "mute": true,
+            "yt_option": true,
+            "autoplay": true
+          }
+        }
+      },
+      "block_order": [
+        "template--15274131095663__b2c5c21a-d33e-4b55-af6a-a8269975555c-heading-1",
+        "heading_jecARJ",
+        "template--15274131095663__b2c5c21a-d33e-4b55-af6a-a8269975555c-text-1",
+        "heading_RMxtCz",
+        "text_BeF4TR",
+        "text_NfJ68U",
+        "video_AwfR6p",
+        "7c2d64b8-cc81-4126-bbc2-b67757210729"
+      ],
+      "custom_css": [
+        ".image-with-text__media {height: 400px;}",
+        ".heading {color: #ff3a0c;}",
+        ".heading strong {background: linear-gradient( 0deg, rgb(249, 255, 169) 0%, rgb(249, 255, 169) 40%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 100% );}"
+      ],
+      "settings": {
+        "hide_in_desktop": false,
+        "hide_in_mobile": false,
+        "image_hide_in_desktop": false,
+        "image_hide_in_mobile": true,
+        "image": "shopify://shop_images/index_h1.jpg",
+        "image-as-url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "dk_padding_top": 0,
+        "dk_padding_bottom": 0,
+        "mb_padding_top": 0,
+        "mb_padding_bottom": 0,
+        "class_name": "custom-home-restore-section"
+      }
+    },
+    "autoloop_video_R6txLT": {
+      "type": "autoloop-video",
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "heading": ""
+      }
+    },
+    "e05ca961-7744-45af-b3ff-f02864bf5796": {
+      "type": "custom-image-text",
+      "blocks": {
+        "template--15274131095663__e05ca961-7744-45af-b3ff-f02864bf5796-heading-1": {
+          "type": "heading",
+          "settings": {
+            "hide_in_desktop": true,
+            "hide_in_mobile": false,
+            "heading": "<p><strong>quickly</strong> eliminate wrinkles<br/></p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--15274131095663__e05ca961-7744-45af-b3ff-f02864bf5796-text-1": {
+          "type": "text",
+          "settings": {
+            "hide_in_desktop": true,
+            "hide_in_mobile": false,
+            "text": "<p>ShowAge's unique formula fills the wrinkled areas and provides a smooth appearance. Independent dermatology laboratories have tested its formula.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--15274131095663__e05ca961-7744-45af-b3ff-f02864bf5796-heading-1",
+        "template--15274131095663__e05ca961-7744-45af-b3ff-f02864bf5796-text-1"
+      ],
+      "custom_css": [
+        "img {object-fit: contain;}",
+        ".image-with-text__media {width: 85%; margin: auto;}",
+        ".heading {color: #ff3a0c; text-transform: unset; font-size: calc(var(--font-heading-scale) * 2.4rem);}",
+        "strong {background: linear-gradient( 0deg, rgb(249, 255, 169) 0%, rgb(249, 255, 169) 40%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 100% );}"
+      ],
+      "settings": {
+        "hide_in_desktop": true,
+        "hide_in_mobile": false,
+        "image_hide_in_desktop": true,
+        "image_hide_in_mobile": false,
+        "image": "shopify://shop_images/image.jpg",
+        "image-as-url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "dk_padding_top": 0,
+        "dk_padding_bottom": 0,
+        "mb_padding_top": 0,
+        "mb_padding_bottom": 0,
+        "class_name": "reverse-grey-section"
+      }
+    },
+    "ca28abdd-cedc-4eae-99b6-4b0e08917fdf": {
+      "type": "custom-image-text",
+      "settings": {
+        "hide_in_desktop": true,
+        "hide_in_mobile": false,
+        "image_hide_in_desktop": false,
+        "image_hide_in_mobile": false,
+        "image": "shopify://shop_images/image_2c3bc82d-7d61-4878-af78-6cbafdfbd564.jpg",
+        "image-as-url": "shopify://products/showage-anti-aging-shower-gel",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "dk_padding_top": 0,
+        "dk_padding_bottom": 0,
+        "mb_padding_top": 20,
+        "mb_padding_bottom": 0,
+        "class_name": "reverse-bottom-img-main"
+      }
+    },
+    "8217184d-e8a4-44eb-8d0f-a1a741d8cbc1": {
+      "type": "rich-text-with-button",
+      "custom_css": [
+        ".heading,.sub_heading {color: #fff;}",
+        ".button {background-color: #431273;}",
+        "h2,p {text-align: center;}",
+        ".heading {font-family: var(--font-body-family); font-weight: 100;}",
+        ".sub_heading {font-family: var(--font-heading-family); font-size: calc(var(--font-body-scale) * 1.86rem);}"
+      ],
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "bg_color": "#ff3a0c",
+        "show_full_width": false,
+        "heading": "Strengthens the immune system",
+        "sub_heading": "Rejuvenates your skin quickly",
+        "text": "",
+        "button_text": "Shop now",
+        "button-top-image": "shopify://shop_images/USERS-PHOTO.png",
+        "button_link": "shopify://products/showage-anti-aging-shower-gel",
+        "button-bottom": "60% OFF ON YOUR FIRST ORDER",
+        "second_text": "",
+        "section_padding_top": 30,
+        "section_padding_bottom": 100,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 20,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    },
+    "072c12c8-5012-42ce-b8e3-28c4d75adae2": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15270430572655__072c12c8-5012-42ce-b8e3-28c4d75adae2-title-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "14a2c742-53e3-454d-9aa9-cf2cf2be2be3": {
+          "type": "text",
+          "settings": {
+            "text": "(3 MONTH SUPPLY)",
+            "text_style": "body",
+            "text_align": "left"
+          }
+        },
+        "custom_liquid_qtELNY": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"display: flex; flex-direction: row; align-items: baseline;\">\n<div style=\"display: flex;\">\n<img src=\"https://cdn.shopify.com/s/files/1/0651/0277/4471/files/star-img.png?v=1710752217\" width=\"12px\">\n<img src=\"https://cdn.shopify.com/s/files/1/0651/0277/4471/files/star-img.png?v=1710752217\" width=\"12px\">\n<img src=\"https://cdn.shopify.com/s/files/1/0651/0277/4471/files/star-img.png?v=1710752217\" width=\"12px\">\n<img src=\"https://cdn.shopify.com/s/files/1/0651/0277/4471/files/star-img.png?v=1710752217\" width=\"12px\">\n<img src=\"https://cdn.shopify.com/s/files/1/0651/0277/4471/files/star-img.png?v=1710752217\" width=\"12px\"></div>\n<span style=\"font-size:15px; color: white; padding-left: 5px;\">1261 reviews</span>\n</div>"
+          }
+        },
+        "06d2ccdf-2fd7-4df1-b432-c34d41901a79": {
+          "type": "rating",
+          "settings": {}
+        },
+        "template--15270430572655__072c12c8-5012-42ce-b8e3-28c4d75adae2-price-1": {
+          "type": "price",
+          "settings": {}
+        },
+        "92a78a9f-5722-4f53-837d-32f60b0495aa": {
+          "type": "description",
+          "settings": {}
+        },
+        "buy_buttons_2_at4PUE": {
+          "type": "buy_buttons-2",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "f1695cb5-0131-4eb6-9e04-3bad4fcd92cd": {
+          "type": "text",
+          "settings": {
+            "text": "<em>60 days money back guarantee</em>",
+            "text_style": "body",
+            "text_align": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15270430572655__072c12c8-5012-42ce-b8e3-28c4d75adae2-title-1",
+        "14a2c742-53e3-454d-9aa9-cf2cf2be2be3",
+        "custom_liquid_qtELNY",
+        "06d2ccdf-2fd7-4df1-b432-c34d41901a79",
+        "template--15270430572655__072c12c8-5012-42ce-b8e3-28c4d75adae2-price-1",
+        "92a78a9f-5722-4f53-837d-32f60b0495aa",
+        "buy_buttons_2_at4PUE",
+        "f1695cb5-0131-4eb6-9e04-3bad4fcd92cd"
+      ],
+      "custom_css": [
+        ".vendor {display: none;}",
+        ".product-media-container {border: unset;}"
+      ],
+      "settings": {
+        "desktop_hide": false,
+        "mobile_hide": true,
+        "heading": "ANTI- AGING SHOWER GEL",
+        "sub_heading": "4 MONTHS OF USE",
+        "product": "anti-aging-shower-gel",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "none",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "view_full_detail": false,
+        "padding_top": 24,
+        "padding_bottom": 20
+      }
+    },
+    "image_banner_gttaCX": {
+      "type": "image-banner",
+      "custom_css": [
+        "@media only screen and (min-width: 750px) {.banner {display: none; }}"
+      ],
+      "settings": {
+        "desktop_hide": false,
+        "mobile_hide": false,
+        "image": "shopify://shop_images/index_showage_global_09.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "text_with_notch_K8aAqm": {
+      "type": "text-with-notch",
+      "blocks": {
+        "richtext_W93gXQ": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>Don't be deprived of your skin's</p>",
+            "text-align": "center",
+            "text-color": "#ffffff"
+          }
+        },
+        "richtext_KCF8UK": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p>regenerative potential</p>",
+            "text-align": "center",
+            "text-color": "#ffffff"
+          }
+        },
+        "richtext_ApmQhW": {
+          "type": "richtext",
+          "settings": {
+            "richtext": "<p><strong>Join our preferred ones!</strong></p>",
+            "text-align": "center",
+            "text-color": "#ff3a0c"
+          }
+        }
+      },
+      "block_order": [
+        "richtext_W93gXQ",
+        "richtext_KCF8UK",
+        "richtext_ApmQhW"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "bgcolor": "#000000",
+        "section_padding_top": 20,
+        "section_padding_bottom": 20,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0
+      }
+    },
+    "548f46c3-10b7-484b-8470-06d3d2c03907": {
+      "type": "custom-review-slider",
+      "blocks": {
+        "110876de-021a-45cb-859b-907c440ec0dc": {
+          "type": "Review",
+          "settings": {
+            "image": "shopify://shop_images/1.jpg"
+          }
+        },
+        "819e4362-5db5-476b-b4f1-4662f8dbfbf2": {
+          "type": "Review",
+          "settings": {
+            "image": "shopify://shop_images/2.jpg"
+          }
+        },
+        "f105802f-fc5c-4af4-89c6-350161a3fcd0": {
+          "type": "Review",
+          "settings": {
+            "image": "shopify://shop_images/3.jpg"
+          }
+        },
+        "9d05dc3f-a9cb-43f4-9604-8efa2b7bd59d": {
+          "type": "Review",
+          "settings": {
+            "image": "shopify://shop_images/4.jpg"
+          }
+        },
+        "review_p8Ctpr": {
+          "type": "Review",
+          "settings": {
+            "image": "shopify://shop_images/5.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "110876de-021a-45cb-859b-907c440ec0dc",
+        "819e4362-5db5-476b-b4f1-4662f8dbfbf2",
+        "f105802f-fc5c-4af4-89c6-350161a3fcd0",
+        "9d05dc3f-a9cb-43f4-9604-8efa2b7bd59d",
+        "review_p8Ctpr"
+      ],
+      "custom_css": [
+        "h2 {color: #dd1075;}"
+      ],
+      "settings": {
+        "hide_in_desktop": true,
+        "hide_in_mobile": false,
+        "heading": "",
+        "dots_enabled": true,
+        "arrow_enabled": false,
+        "autoplay_enabled": true,
+        "infinite_enabled": true,
+        "slide_to_show": 1,
+        "slide_to_scroll": 1,
+        "dk_padding_top": 16,
+        "dk_padding_bottom": 0,
+        "mb_padding_top": 0,
+        "mb_padding_bottom": 0
+      }
+    },
+    "icon_with_text_background_AGCPnW": {
+      "type": "icon-with-text-background",
+      "blocks": {
+        "icon_with_text_Mj4mby": {
+          "type": "icon-with-text",
+          "settings": {
+            "icon": "shopify://shop_images/1.png",
+            "text": "<p><strong>Nourishes</strong><br/>The Skin</p>"
+          }
+        },
+        "icon_with_text_TFzfLL": {
+          "type": "icon-with-text",
+          "settings": {
+            "icon": "shopify://shop_images/2.png",
+            "text": "<p><strong>Eliminates</strong><br/>Wrinkles</p>"
+          }
+        },
+        "icon_with_text_dXgCJG": {
+          "type": "icon-with-text",
+          "settings": {
+            "icon": "shopify://shop_images/3.png",
+            "text": "<p><strong>Effect on</strong><br/>First Use</p>"
+          }
+        },
+        "icon_with_text_ym8z4a": {
+          "type": "icon-with-text",
+          "settings": {
+            "icon": "shopify://shop_images/4.png",
+            "text": "<p><strong>No Allergic</strong><br/>Reactions</p>"
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_Mj4mby",
+        "icon_with_text_TFzfLL",
+        "icon_with_text_dXgCJG",
+        "icon_with_text_ym8z4a"
+      ],
+      "custom_css": [
+        "h1 strong {background: linear-gradient( 0deg, rgb(249, 255, 169) 0%, rgb(249, 255, 169) 40%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 100% );}",
+        "h1 {font-size: calc(var(--font-heading-scale) * 2.4rem);}"
+      ],
+      "settings": {
+        "desktop_hide": true,
+        "mobile_hide": false,
+        "background": "shopify://shop_images/image_9a720254-e580-424f-9d88-626e659a0a2b.jpg",
+        "heading": "<p>wash <strong>the wrinkles</strong> away</p>",
+        "content": "<p>All natural ingredients in ShowAge’s formula, <strong>directly affect your skin and reduce the appearance of wrinkles.</strong> ShowAge nourishes your skin and prevents aging.</p>"
+      }
+    },
+    "custom_image_text_JMxNRD": {
+      "type": "custom-image-text",
+      "blocks": {
+        "heading_rEG7Lk": {
+          "type": "heading",
+          "settings": {
+            "hide_in_desktop": false,
+            "hide_in_mobile": false,
+            "heading": "<p>showage natural <strong>anti-aging gel</strong></p>",
+            "heading_size": "h1"
+          }
+        },
+        "text_CDiQdp": {
+          "type": "text",
+          "settings": {
+            "hide_in_desktop": false,
+            "hide_in_mobile": false,
+            "text": "<p>ShowAge is easy to use in its gel form. <strong>With its natural ingredients such as vitamin D and vitamin C</strong>, rejuvenates your skin simply by taking a shower.</p>",
+            "text_style": "body"
+          }
+        },
+        "six_image_4n6Cyb": {
+          "type": "six_image",
+          "settings": {
+            "hide_in_desktop": true,
+            "hide_in_mobile": false,
+            "img1": "shopify://shop_images/1_00fc54c3-c4ba-46b3-aee9-8e0ac1441fe8.png",
+            "img2": "shopify://shop_images/2_b2ddba32-92dc-4b0e-9ecb-8ac1d31ed251.png",
+            "img3": "shopify://shop_images/3_a48cd15a-318d-40f5-9249-38a73ce7425b.png",
+            "img4": "shopify://shop_images/4_dd9dad2b-db64-4588-aee3-f81a1049db18.png",
+            "img5": "shopify://shop_images/5.png",
+            "img6": "shopify://shop_images/6.png"
+          }
+        }
+      },
+      "block_order": [
+        "heading_rEG7Lk",
+        "text_CDiQdp",
+        "six_image_4n6Cyb"
+      ],
+      "custom_css": [
+        "h2 strong {background: linear-gradient( 0deg, rgb(249, 255, 169) 0%, rgb(249, 255, 169) 40%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 100% );}",
+        "h2 {color: #ff3a0c; font-size: calc(var(--font-heading-scale) * 2.4rem);}"
+      ],
+      "settings": {
+        "hide_in_desktop": true,
+        "hide_in_mobile": false,
+        "image_hide_in_desktop": false,
+        "image_hide_in_mobile": true,
+        "image-as-url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "dk_padding_top": 36,
+        "dk_padding_bottom": 36,
+        "mb_padding_top": 44,
+        "mb_padding_bottom": 60,
+        "class_name": "custom-home-nature-section"
+      }
+    },
+    "37bcbae6-e2a8-4378-ae15-e969592636e9": {
+      "type": "custom-image-text",
+      "blocks": {
+        "template--15274131095663__37bcbae6-e2a8-4378-ae15-e969592636e9-heading-1": {
+          "type": "heading",
+          "settings": {
+            "hide_in_desktop": false,
+            "hide_in_mobile": false,
+            "heading": "<p>SAFE AND USEFUL CONTENTS</p>",
+            "heading_size": "h1"
+          }
+        },
+        "979391eb-8bb9-451c-aa7f-54e33203a6c7": {
+          "type": "three_image",
+          "settings": {
+            "hide_in_desktop": false,
+            "hide_in_mobile": true
+          }
+        },
+        "template--15274131095663__37bcbae6-e2a8-4378-ae15-e969592636e9-text-1": {
+          "type": "text",
+          "settings": {
+            "hide_in_desktop": false,
+            "hide_in_mobile": false,
+            "text": "<p>Showage shower gel can be used by anyone who suffers from wrinkles and sagging skin.<br/><br/></p>",
+            "text_style": "body"
+          }
+        },
+        "1db98c7e-35b9-4a46-89df-39b379c63565": {
+          "type": "six_image",
+          "settings": {
+            "hide_in_desktop": true,
+            "hide_in_mobile": false
+          }
+        },
+        "64b80b2a-6063-4137-9787-71ea6cba1d82": {
+          "type": "button",
+          "settings": {
+            "hide_in_desktop": true,
+            "hide_in_mobile": false,
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://products/epify",
+            "button_style_secondary": false,
+            "btn_bottom_text": "25% OFF for your first order"
+          }
+        }
+      },
+      "block_order": [
+        "template--15274131095663__37bcbae6-e2a8-4378-ae15-e969592636e9-heading-1",
+        "979391eb-8bb9-451c-aa7f-54e33203a6c7",
+        "template--15274131095663__37bcbae6-e2a8-4378-ae15-e969592636e9-text-1",
+        "1db98c7e-35b9-4a46-89df-39b379c63565",
+        "64b80b2a-6063-4137-9787-71ea6cba1d82"
+      ],
+      "custom_css": [
+        "a {background-color: #1c0c5b; color: #fff;}"
+      ],
+      "settings": {
+        "hide_in_desktop": false,
+        "hide_in_mobile": true,
+        "image_hide_in_desktop": false,
+        "image_hide_in_mobile": true,
+        "image": "shopify://shop_images/index_h3.jpg",
+        "image-as-url": "",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "dk_padding_top": 36,
+        "dk_padding_bottom": 36,
+        "mb_padding_top": 44,
+        "mb_padding_bottom": 60,
+        "class_name": "custom-home-nature-section"
+      }
+    },
+    "image_banner_ePEU8N": {
+      "type": "image-banner",
+      "custom_css": [
+        "@media only screen and (min-width: 750px) {.banner {display: none; }}",
+        ".banner__media {background-color: #fff;}"
+      ],
+      "settings": {
+        "desktop_hide": false,
+        "mobile_hide": false,
+        "image": "shopify://shop_images/REFERENCE.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "0f3ccdbb-868a-47f5-a11c-7d60764bb52b": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "ea134779-f96b-49a5-9c11-6e5ab219f590": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1_ed0f4a94-a637-4405-a61e-aa97af5d8b07.jpg"
+          }
+        },
+        "template--15274131095663__0f3ccdbb-868a-47f5-a11c-7d60764bb52b-column-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/2_5148806e-c7f8-4cea-90f1-6d0e1e3d20dc.jpg"
+          }
+        },
+        "template--15274131095663__0f3ccdbb-868a-47f5-a11c-7d60764bb52b-column-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/3_dbcf8824-08ff-4f6d-afab-a0dec50fd691.jpg"
+          }
+        },
+        "350a787c-6892-476a-bdd0-3cfba16cacf2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/4_6e1f2c54-fe1d-4181-a5cd-0d7e02a4fa50.jpg"
+          }
+        },
+        "template--15274131095663__0f3ccdbb-868a-47f5-a11c-7d60764bb52b-column-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/5_17b9dc37-b0e8-49fd-a9e8-965a927ce7c4.jpg"
+          }
+        },
+        "c3b4862e-2108-40d7-84e9-a58256d4d630": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/6.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "ea134779-f96b-49a5-9c11-6e5ab219f590",
+        "template--15274131095663__0f3ccdbb-868a-47f5-a11c-7d60764bb52b-column-2",
+        "template--15274131095663__0f3ccdbb-868a-47f5-a11c-7d60764bb52b-column-3",
+        "350a787c-6892-476a-bdd0-3cfba16cacf2",
+        "template--15274131095663__0f3ccdbb-868a-47f5-a11c-7d60764bb52b-column-1",
+        "c3b4862e-2108-40d7-84e9-a58256d4d630"
+      ],
+      "custom_css": [
+        "h2 strong {background: linear-gradient( 0deg, rgb(249, 255, 169) 0%, rgb(249, 255, 169) 40%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 100% ); color: #ff3a0c;}",
+        ".title {text-transform: unset; font-size: calc(var(--font-heading-scale) * 2.4rem);}"
+      ],
+      "settings": {
+        "hide_in_desktop": true,
+        "hide_in_mobile": false,
+        "title": "<strong>follow us on Instagram</strong>",
+        "subtitle": "@showageglobal",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "dk_padding_top": 36,
+        "dk_padding_bottom": 36,
+        "mb_padding_top": 36,
+        "mb_padding_bottom": 36
+      }
+    },
+    "70f0047d-e57e-4792-9a89-829475e4a41e": {
+      "type": "custom-multi-image",
+      "blocks": {
+        "8bab5bb2-49d9-4066-9ae4-8d3457b2b778": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/index_image4-1.jpg",
+            "image_url": "shopify://pages/see-results"
+          }
+        },
+        "65ff47a0-3612-4f38-94a2-deecbae3fa6e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/index_image4-2.jpg",
+            "image_url": "shopify://pages/ingredients"
+          }
+        },
+        "e47345c5-dd2e-4317-bb2f-77899ecd351e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/index_image4-3.jpg",
+            "image_url": "shopify://pages/faq"
+          }
+        }
+      },
+      "block_order": [
+        "8bab5bb2-49d9-4066-9ae4-8d3457b2b778",
+        "65ff47a0-3612-4f38-94a2-deecbae3fa6e",
+        "e47345c5-dd2e-4317-bb2f-77899ecd351e"
+      ],
+      "settings": {
+        "desktop_hide": false,
+        "mobile_hide": true,
+        "bg_color": "",
+        "show_full_width": true,
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 0,
+        "section_padding_bottom_mobile": 0,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "5f10fe11-5594-4f0c-ba41-502a34860e56",
+    "autoloop_video_4Wefzb",
+    "0d4d6c47-1297-4bca-8f4b-5dee6ba16a92",
+    "b2c5c21a-d33e-4b55-af6a-a8269975555c",
+    "autoloop_video_R6txLT",
+    "e05ca961-7744-45af-b3ff-f02864bf5796",
+    "ca28abdd-cedc-4eae-99b6-4b0e08917fdf",
+    "8217184d-e8a4-44eb-8d0f-a1a741d8cbc1",
+    "072c12c8-5012-42ce-b8e3-28c4d75adae2",
+    "image_banner_gttaCX",
+    "text_with_notch_K8aAqm",
+    "548f46c3-10b7-484b-8470-06d3d2c03907",
+    "icon_with_text_background_AGCPnW",
+    "custom_image_text_JMxNRD",
+    "37bcbae6-e2a8-4378-ae15-e969592636e9",
+    "image_banner_ePEU8N",
+    "0f3ccdbb-868a-47f5-a11c-7d60764bb52b",
+    "70f0047d-e57e-4792-9a89-829475e4a41e"
+  ]
+}

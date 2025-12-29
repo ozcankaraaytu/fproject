@@ -1,0 +1,136 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_MgMD4t": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_tMj6JB": {
+          "type": "heading",
+          "settings": {
+            "heading": "INGREDIENTS",
+            "heading_size": "h2"
+          }
+        },
+        "text_R6kJBV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All of our hair removal care products are manufactured in the United States, in registered facilities, following GMP guidelines. Click below to learn more about our ingredients.<br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_tMj6JB",
+        "text_R6kJBV"
+      ],
+      "custom_css": [
+        "p {color: #000;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_AmaTQU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EkgjwW": {
+          "type": "heading",
+          "settings": {
+            "heading": "HAIR REMOVAL CREAM",
+            "heading_size": "h2"
+          }
+        },
+        "text_eYe93c": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>WALNUT :</strong> We have discovered that the substance in the walnuts, which slowly destroys the follicle of the hair. This substance is especially active, when the walnuts are still green.</p>"
+          }
+        },
+        "text_L647EA": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>EGG WHITE : </strong>Egg whites contain collagen and vitamins, which is considered essential for smoothing fine lines and wrinkles. Also egg whites adhere to the hair, which makes it easy to remove hair from follicles!</p>"
+          }
+        },
+        "text_hyqawt": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>LADY HER : </strong>Lady’s mantle has been used since medieval times for its medicinal properties. Many also believed that the rainwater collected on the leaves of the herb had magical powers, but that of course, is not believed in modern times. This beneficial herb is used to cure many ailments even today.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EkgjwW",
+        "text_eYe93c",
+        "text_L647EA",
+        "text_hyqawt"
+      ],
+      "custom_css": [
+        "p {text-align: left; color: #000;}",
+        "h2 {background-color: #000; color: #fff;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_Cw4rWY": {
+      "type": "rich-text",
+      "blocks": {
+        "text_xtLLQE": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>ZIRNIC HERB : </strong>One of the oldest method for removing unwanted body hair is using zirnic herb.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_xtLLQE"
+      ],
+      "custom_css": [
+        "p {color: #000;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_MgMD4t",
+    "rich_text_AmaTQU",
+    "rich_text_Cw4rWY"
+  ]
+}

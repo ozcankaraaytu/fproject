@@ -1,0 +1,74 @@
+.contact img {
+  max-width: 100%;
+}
+
+.contact .form__message {
+  align-items: flex-start;
+}
+
+.contact .icon-success {
+  margin-top: 0.2rem;
+}
+
+.contact .field {
+  margin-bottom: 1.6rem;
+}
+
+.contact__button {
+  margin-top: 1.6rem;
+}
+
+@media screen and (min-width: 750px) {
+  .contact__fields {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 1.6rem;
+  }
+}
+
+
+/* css start */
+
+.contact { font-family: var(--Montserrat); color: #212529; margin: 0 auto; padding: 0 24px; }
+.contact .title { font-size: calc(var(--font-heading-scale) * 2.4rem); font-weight: var(--font-weight-Semibold); text-align: center; margin-bottom: 50px;  font-family: var(--Montserrat); }
+.main_custom_contect .main_btn { display: flex; gap: 15px; margin-bottom: 25px;  }
+.main_custom_contect .livechat_button  { max-width: 211px; width: 100%; height: 58px; color: #366747; border: 1px solid #366747; transition: all .3s linear; font-size: calc(var(--font-body-scale) * 1.6rem); font-weight: var(--font-weight-Medium); font-family: var(--Montserrat); text-transform: uppercase; display: flex; justify-content: center; align-items: center; text-decoration: none; }
+.main_custom_contect .livechat_button:hover { background-color: #366747; color: #fff; }
+.main_custom_contect .livechat_button svg { width: 25px; height: 25px; margin-right: 8px; }
+.main_custom_contect .livechat_button svg path { fill: #366747; transition: all .3s linear; }
+.main_custom_contect .livechat_button:hover svg path { fill: #fff; }
+.main_custom_contect .whatsapp_button  { max-width: 211px; width: 100%; height: 58px; background-color: #06d755; color: #fff; border: 1px solid #06d755; transition: all .3s linear; font-size: calc(var(--font-body-scale) * 1.6rem); font-weight: var(--font-weight-Medium); text-transform: uppercase; display: flex; justify-content: center; align-items: center; text-decoration: none; font-family: var(--Montserrat); }
+.main_custom_contect .whatsapp_button svg { width: 25px; height: 25px; margin-right: 8px; }
+
+.main_custom_contect .contect_wrap p { margin-top: 0; padding: 8px 0; line-height: 24px; }
+.main_custom_contect .contect_wrap strong { font-weight: var(--font-weight-Semibold); }
+
+.contact #ContactForm {  margin-top: 5rem; }
+.contact .field .field__label { display: none; }
+.contact .field .field__input { font-family: var(--Montserrat); }
+.contact .field .field__input::placeholder { opacity: 1; font-weight: var(--font-weight-regular); }
+.contact .field .field__input:focus { padding: 1.5rem; }
+.contact #ContactForm .contact__button .button { background-color: #0d9916; color: #ffffff; font-size: calc(var(--font-body-scale) * 1.6rem); letter-spacing: 3px; font-weight: var(--font-weight-Medium); height: 52px; text-decoration: none; text-transform: uppercase; padding: 1rem 1.5rem; border: none; outline: none; width: 100%; }
+.contact #ContactForm .contact__button .button::after, .contact #ContactForm .contact__button .button::before { display: none; } 
+
+.contact .form-status{ background-color: #d4edda; text-align: center; margin: 16px 0; padding: 14px 0; justify-content: center; align-items: center; border: 1px solid #c3e6cb; color: #155724; font-family: var(--Metropolis-Regular); font-weight: var(--font-weight-regular); font-size: calc(var(--font-body-scale) * 1.6rem);}
+
+
+@media (min-width: 576px){
+  .contact {
+      max-width: 540px;
+  }
+}
+@media (min-width: 768px){
+  .contact {
+      max-width: 720px;
+  }
+}
+
+@media(max-width: 767px) {
+  .contact #ContactForm {  margin-top: 3rem; }
+  .main_custom_contect .main_btn { flex-direction: column; }
+  .main_custom_contect .livechat_button, .main_custom_contect .whatsapp_button { max-width: unset; }
+}
+
+/* css end */

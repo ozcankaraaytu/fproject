@@ -1,0 +1,220 @@
+{{ 'main-logo-img.css' | asset_url | stylesheet_tag }}
+<style>
+        #section-{{ section.id }}{
+          background-color: {% if section.settings.bg_color != blank %}{{ section.settings.bg_color }}{% else %}transparent{% endif %};
+          padding-top: {{ section.settings.section_padding_top }}px;
+          padding-bottom: {{ section.settings.section_padding_bottom }}px;
+          margin-top: {{ section.settings.section_margin_top }}px;
+          margin-bottom: {{ section.settings.section_margin_bottom }}px;
+        }
+        
+        @media (max-width: 767px) {
+          #section-{{ section.id }}{
+            padding-top: {{ section.settings.section_padding_top_mobile }}px;
+            padding-bottom: {{ section.settings.section_padding_bottom_mobile }}px;
+            margin-top: {{ section.settings.section_margin_top_mobile }}px;
+            margin-bottom: {{ section.settings.section_margin_bottom_mobile }}px;
+          }
+        }
+  </style>
+
+  <div id="section-{{ section.id }}" class="main_logo_img {% if section.settings.desktop_hide %}desktop_hide{% endif %} {% if section.settings.mobile_hide %}mobile_hide{% endif %}">
+    <div class="mainlogo_wrap {% if section.settings.show_full_width %}page-width-full{% else %}page-width{% endif %}">
+      {%- if section.settings.heading  != blank or  section.settings.subtext  != blank -%}
+        <div class="title">
+          {%- if section.settings.heading  != blank -%}
+            <h2 class="heading">{{ section.settings.heading }}</h2>
+          {%- endif -%}
+          {%- if section.settings.subtext  != blank -%}
+            <h2 class="heading">{{ section.settings.subtext }}</h2>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+      {%- if section.blocks.size > 0   -%}
+        <div class="main_icon_logo_wrap">
+            {%- for block in section.blocks -%}
+            {%- if  block.settings.image != blank and block.settings.titles != blank -%}
+                <div class="img_txt_wrap">
+                {%- if  block.settings.image != blank-%}
+                    {{ block.settings.image | image_url: width: 1500 | image_tag:
+                    loading: 'lazy',
+                    width: block.settings.image.width,
+                    height: image_height,
+                    class: 'image_item',
+                    sizes: sizes,
+                    widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+                    alt: block.settings.image.alt | escape
+                    }}
+                {%- endif -%}
+                {%- if  block.settings.titles != blank-%}
+                    <h2 class="img_title">
+                        {{  block.settings.titles }}
+                    </h2>
+                {%- endif -%}
+                {%- if  block.settings.sub_texts != blank-%}
+                    <p class="sub_texts">
+                        {{  block.settings.sub_texts }}
+                    </p>
+                {%- endif -%}
+                </div>
+            {%- endif -%}
+            {%- endfor -%}
+        </div>
+       {%- endif -%}
+    </div>
+  </div>
+
+{% schema %}
+{
+  "name": "Logo image",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "desktop_hide",
+      "label":"Desktop hide"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_hide",
+      "label":"Mobile hide"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_full_width",
+      "label": "Full width"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "subtext",
+      "label": "Subtext"
+    },
+    {   
+      "type": "header",
+      "content": "For desktop device"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label": "Padding top",
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label":  "Padding bottom",
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_margin_top",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label": "Margin top",
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "section_margin_bottom",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label": "Margin bottom",
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "For mobile device"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top_mobile",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label":"Padding top",
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom_mobile",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label": "Padding bottom",
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "section_margin_top_mobile",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label": "Margin top",
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "section_margin_bottom_mobile",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "label":"Margin bottom",
+      "unit": "px",
+      "default": 100
+    }
+  ],
+  "blocks": [
+    {
+      "type": "icon",
+      "name": "Icon",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Icon"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "titles",
+          "label": "Title"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "sub_texts",
+          "label": "Sub text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo image"
+    }
+  ]
+}
+{% endschema %}
+

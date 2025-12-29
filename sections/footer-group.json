@@ -1,0 +1,78 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "53d7262b-faf1-43f7-b107-9e02fb807d08": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/general_logo.png",
+            "img_link": "/",
+            "image_width": 310,
+            "alignment": ""
+          }
+        },
+        "7acea77e-ad82-4976-acf2-73b003f4842d": {
+          "type": "text",
+          "settings": {
+            "heading": "Contact us",
+            "btn_1_text": "Live chat",
+            "btn_1_url": "",
+            "enable_live_chat": true,
+            "btn_2_text": "Whatsapp",
+            "btn_2_url": "https://wa.me/+17162261624?text=Hello%2C+can+I+get+information+about+SoapCover%3F",
+            "subtext": "<p><strong>Email:</strong> info.cs@ugurme.com</p><p><strong>Phone:</strong> <a href=\"tel:+1(716)226-1624<br>+1(202)773-3504<br>+44(208)095-0368<br>+44(772)398-1924\">+1 (716) 226-1624<br/>+1 (202) 773-3504<br/>+44 (208) 095-0368<br/>+44 (772) 398-1924</a><br/>( M-F 10am-6pm EST )</p><p><a href=\"/pages/contact\" title=\"Contact\">See All Contact Options</a></p>",
+            "show_social": true
+          }
+        },
+        "1b9ae1b6-b68c-44b7-841f-6fae8f1bf561": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Menu",
+            "menu": "footer"
+          }
+        },
+        "148497f7-8d21-48c1-901d-a976d87502de": {
+          "type": "richText",
+          "settings": {
+            "heading_title": "WHY WE DO IT",
+            "content": "<p>Our most important goal is to see our valued customer’s happy after using our products. As a company, we always try to find 100% drug free solutions. We believe that using chemicals in products is neither healthy nor effective on the long run. That’s how we founded SHOWAGE; 100% drug free, no harmful chemicals, and all-natural ingredients.</p><p>We gathered our reviews from our customers after they agreed to let us publicly share their experiences. Results vary from one person to another, depending on their diet, lifestyle, bodily conditions, etc. SHOWAGE has not been evaluated by the Food and Drug Administration. It is a supplement that is NOT meant to be used as a cure, medication, or remedy.<br/>All of our prices are in US dollars. We have the full right to change promo codes, prices, and campaigns without prior notice.<br/>Copyright © 2018-2024 SHOWAGE | All Rights Reserved.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "53d7262b-faf1-43f7-b107-9e02fb807d08",
+        "7acea77e-ad82-4976-acf2-73b003f4842d",
+        "1b9ae1b6-b68c-44b7-841f-6fae8f1bf561",
+        "148497f7-8d21-48c1-901d-a976d87502de"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": true,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 60,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

@@ -1,0 +1,5 @@
+.main_logo_img .main_icon_logo_wrap { display: flex; flex-direction: column; gap: 50px; }
+.main_logo_img .main_icon_logo_wrap .img_txt_wrap .image_item { width: 60px; height: 60px; object-fit: contain; margin-bottom: 10px; }
+.main_logo_img .main_icon_logo_wrap .img_txt_wrap .img_title { font-size: calc(var(--font-heading-scale) * 2.5rem); margin-bottom: 10px; }
+.main_logo_img .main_icon_logo_wrap .img_txt_wrap .sub_texts { text-decoration: unset; color: rgba(var(--color-foreground), 0.75); margin: 0; font-weight: var(--font-weight-Medium); font-family: var(--Metropolis-Medium); font-size: calc(var(--font-body-scale) * 1.8rem); line-height: normal; }
+.main_logo_img .main_icon_logo_wrap .img_txt_wrap .sub_texts a { text-decoration: unset; color: rgba(var(--color-foreground), 0.75); }

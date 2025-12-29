@@ -1,0 +1,268 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "show_page_title": false,
+        "heading": "Excellent choice ! Here are your products:",
+        "text": "Risk free- 60 Days Money Back Guarantee",
+        "padding_top": 36,
+        "padding_bottom": 20
+      }
+    },
+    "custom_liquid_p7qn48": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_TztQQL": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+            "show_tax": false
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+            "button_top_text": "Taxes included. FREE Shipping over US$60"
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 40
+      }
+    },
+    "custom_liquid_nPRTLL": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"display: flex; flex-direction: row; align-items: baseline; justify-content: center;\">\n<div style=\"display: flex;\">\n<img src=\"https://cdn.shopify.com/s/files/1/0651/0277/4471/files/star-img.png?v=1710752217\" width=\"12px\">\n<img src=\"https://cdn.shopify.com/s/files/1/0651/0277/4471/files/star-img.png?v=1710752217\" width=\"12px\">\n<img src=\"https://cdn.shopify.com/s/files/1/0651/0277/4471/files/star-img.png?v=1710752217\" width=\"12px\">\n<img src=\"https://cdn.shopify.com/s/files/1/0651/0277/4471/files/star-img.png?v=1710752217\" width=\"12px\">\n<img src=\"https://cdn.shopify.com/s/files/1/0651/0277/4471/files/star-img.png?v=1710752217\" width=\"12px\"></div>\n<span style=\"font-size:15px; color: #000; padding-left: 5px;\">4.9/5.0(4000+ Reviews)</span>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_xaVa6p": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"padding: 1rem 2rem;\">\n    <div\n        style=\"max-width: 350px; display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #F3F2F3; color: #000; font-size: 12px; letter-spacing: -0.51px; border-radius: 5px; margin: auto; padding: 1rem;\">\n        <div>GUARANTEED SAFE AND SECURE CHECKOUT WITH</div>\n        <div style=\"margin-top: 1rem;\">\n            <img style=\"width: auto; height: 12px;\"\n                src=\"https://cdn.shopify.com/s/files/1/0587/5135/2963/files/paypal-logo.png?v=1711450688\">\n            <img style=\"width: auto; height: 12px;\"\n                src=\"https://cdn.shopify.com/s/files/1/0587/5135/2963/files/visa-logo.png?v=1711450688\">\n            <img style=\"width: auto; height: 12px;\"\n                src=\"https://cdn.shopify.com/s/files/1/0587/5135/2963/files/mastercard-logo.png?v=1711450688\">\n            <img style=\"width: auto; height: 12px;\"\n                src=\"https://cdn.shopify.com/s/files/1/0587/5135/2963/files/american-express-logo.png?v=1711450688\">\n        </div>\n    </div>\n</div>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "d647dc2c-669c-4696-8b84-956a9dd2aa18": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--15279000289391__d647dc2c-669c-4696-8b84-956a9dd2aa18-collapsible_row-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When will i start seeing the effects?",
+            "icon": "none",
+            "row_content": "<p>SoapCover’s effects will get visible after 3 uses.</p>",
+            "page": ""
+          }
+        },
+        "template--15279000289391__d647dc2c-669c-4696-8b84-956a9dd2aa18-collapsible_row-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use this product on my dyed hair?",
+            "icon": "none",
+            "row_content": "<p>After using SoapCover, you will not be needing hair dyes. It will not be effective on dyed hair.</p>",
+            "page": ""
+          }
+        },
+        "template--15279000289391__d647dc2c-669c-4696-8b84-956a9dd2aa18-collapsible_row-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I use it for beard and moustaches as well?",
+            "icon": "none",
+            "row_content": "<p>Yes. It's also effective on beards and mustaches. It will help you regain your beard and mustaches natural colour.</p>",
+            "page": ""
+          }
+        },
+        "template--15279000289391__d647dc2c-669c-4696-8b84-956a9dd2aa18-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How often should I use it?",
+            "icon": "none",
+            "row_content": "<p>It’s recommended that use it every other day for best outcome. Effects will be visible with regular use.</p>",
+            "page": ""
+          }
+        },
+        "48f0dce3-d500-40a3-ab56-b04dbda6b071": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Will my hair turn gray again when I stop using the product?",
+            "icon": "none",
+            "row_content": "<p>With its anti-gray hair formula, SoapCover turns your hair into its natural colour and guarantees permanent effect.</p>",
+            "page": ""
+          }
+        },
+        "952ff349-0785-44af-a866-538874c42c19": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How is SoapCover different than other products?",
+            "icon": "none",
+            "row_content": "<p>SoapCover is 100% Dye-free while other products has various hair dyes in it.</p>",
+            "page": ""
+          }
+        },
+        "80d290fc-c67d-407a-ae09-eef1c31b5c9d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Is it suitable for men / women?",
+            "icon": "none",
+            "row_content": "<p>Yes, both men and women can use it safely.</p>",
+            "page": ""
+          }
+        },
+        "13fd0bca-93c8-4351-9960-8577eed1ff41": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you offer a money-back guarantee?",
+            "icon": "none",
+            "row_content": "<p>Yes! Our No-Questions Asked 30-Day Money-Back Guarantee provides a hassle free way to try the product and feel the benefits. If you are unhappy for any reason simply let us know and we will provide you a complete refund. All you need to do is send the products back to us and let us know why you were unhappy.</p>",
+            "page": ""
+          }
+        },
+        "beb0b68b-650c-4022-a001-7928ce801db6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where will my order be ship from?",
+            "icon": "none",
+            "row_content": "<p>You order will be shipped from our warehouse located in Miami, FL.Which shipping company deliver my product(s)?When will my package will be shipped?Which payment methods do you offer?How long it will take orders to arrive to final consumer?How many days it take my refund to be issued?</p>",
+            "page": ""
+          }
+        },
+        "384e92ed-9cb0-430b-babf-6fbfcb5c0d45": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Which shipping company deliver my product(s)?",
+            "icon": "none",
+            "row_content": "<p>DHL, United States Postal Service Priority International or Express Mail International USPS These are only inside USA</p>",
+            "page": ""
+          }
+        },
+        "100055dc-5ff1-4648-b42f-b36f78fb8089": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "When will my package will be shipped?",
+            "icon": "none",
+            "row_content": "<p>Your package will be delivered to shipping company within 2 days</p>",
+            "page": ""
+          }
+        },
+        "7aadb6f0-42be-4be2-bd78-128ec6bb24ef": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Which payment methods do you offer?",
+            "icon": "none",
+            "row_content": "<p>We can take payments only via PayPal at this moment. Stay tuned for more.</p>",
+            "page": ""
+          }
+        },
+        "f7cbb653-0b67-4338-8a74-d43e26c6445d": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long it will take orders to arrive to final consumer?",
+            "icon": "none",
+            "row_content": "<p>It takes from 2 to 4 business days to arrive to final consumer. For International orders outside of U.S., shipping period takes 2-3 weeks to arrive to final consumer.</p>",
+            "page": ""
+          }
+        },
+        "647b78aa-42b0-46fa-ba42-9ea7e89c3158": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How many days it take my refund to be issued?",
+            "icon": "none",
+            "row_content": "<p>From 7 to 10 days after receiving the returning product. (You can find return adress in Shipping Policy section)</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15279000289391__d647dc2c-669c-4696-8b84-956a9dd2aa18-collapsible_row-1",
+        "template--15279000289391__d647dc2c-669c-4696-8b84-956a9dd2aa18-collapsible_row-2",
+        "template--15279000289391__d647dc2c-669c-4696-8b84-956a9dd2aa18-collapsible_row-3",
+        "template--15279000289391__d647dc2c-669c-4696-8b84-956a9dd2aa18-collapsible_row-4",
+        "48f0dce3-d500-40a3-ab56-b04dbda6b071",
+        "952ff349-0785-44af-a866-538874c42c19",
+        "80d290fc-c67d-407a-ae09-eef1c31b5c9d",
+        "13fd0bca-93c8-4351-9960-8577eed1ff41",
+        "beb0b68b-650c-4022-a001-7928ce801db6",
+        "384e92ed-9cb0-430b-babf-6fbfcb5c0d45",
+        "100055dc-5ff1-4648-b42f-b36f78fb8089",
+        "7aadb6f0-42be-4be2-bd78-128ec6bb24ef",
+        "f7cbb653-0b67-4338-8a74-d43e26c6445d",
+        "647b78aa-42b0-46fa-ba42-9ea7e89c3158"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_hide": false,
+        "mobile_hide": false,
+        "bg_color": "",
+        "show_full_width": false,
+        "default_padding": false,
+        "caption": "",
+        "heading": "<strong>Frequently Asked Questions</strong>",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
+        "color_scheme": "background-1",
+        "container_color_scheme": "scheme-5af5bd8a-cb68-427c-a08b-bb35e25a2df1",
+        "open_first_collapsible_row": false,
+        "button_text": "",
+        "button_link": "",
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "section_padding_top": 0,
+        "section_padding_bottom": 0,
+        "section_margin_top": 0,
+        "section_margin_bottom": 0,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 20,
+        "section_margin_top_mobile": 0,
+        "section_margin_bottom_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "custom_liquid_p7qn48",
+    "custom_liquid_TztQQL",
+    "cart-footer",
+    "custom_liquid_nPRTLL",
+    "custom_liquid_xaVa6p",
+    "d647dc2c-669c-4696-8b84-956a9dd2aa18"
+  ]
+}

@@ -1,0 +1,213 @@
+{% if section.settings.heading != blank or section.settings.sub_heading != blank or section.settings.text != blank or section.settings.button_text != blank or section.settings.second_text != blank %}
+  <style>
+    #custom-rich--{{ section.id }}{
+      background-color: {% if section.settings.bg_color != blank %}{{ section.settings.bg_color }}{% else %}transparent{% endif %};
+      padding-top: {{ section.settings.section_padding_top }}px;
+      padding-bottom: {{ section.settings.section_padding_bottom }}px;
+      margin-top: {{ section.settings.section_margin_top }}px;
+      margin-bottom: {{ section.settings.section_margin_bottom }}px;
+    }
+    
+    @media (max-width: 767px) {
+      #custom-rich--{{ section.id }}{
+        padding-top: {{ section.settings.section_padding_top_mobile }}px;
+        padding-bottom: {{ section.settings.section_padding_bottom_mobile }}px;
+        margin-top: {{ section.settings.section_margin_top_mobile }}px;
+        margin-bottom: {{ section.settings.section_margin_bottom_mobile }}px;
+      }
+    }
+  </style>
+  
+  <div id="custom-rich--{{ section.id }}" class="richtext_with_btn{% if section.settings.desktop_hide %} desktop_hide{% endif %}{% if section.settings.mobile_hide %} mobile_hide{% endif %}">
+    <div class="{% if section.settings.show_full_width %}page-width-full{% else %}page-width{% endif %}">
+      {% if section.settings.heading != blank %}
+        <h2 class="heading">{{ section.settings.heading }}</h2>
+      {% endif %}
+      {% if section.settings.sub_heading != blank %}
+        <p class="sub_heading">
+          {{ section.settings.sub_heading }}
+        </p>
+      {% endif %}
+      {% if section.settings.text != blank %}
+        <div class="text">{{ section.settings.text }}</div>
+      {% endif %}
+      {% if section.settings.button_text != blank or section.settings.second_text != blank %}
+        <div class="main_custom_button">
+          {% if section.settings.button_text != blank %}
+            <p class="first_button">
+              {% if section.settings.button-top-image != blank %}<img class="button-top-image" src="{{ section.settings.button-top-image | image_url }}" style="width: 100%; max-width: 250px; margin-top: 2rem;">{% endif %}
+              <a href="{% if section.settings.button_link != blank %}{{ section.settings.button_link }}{% else %}javascript:void(0);{% endif %}" class="button">
+                {{ section.settings.button_text }}
+              </a>
+            </p>
+          {% endif %}
+          {% if section.settings.second_text != blank %}
+            <p class="second_button">{{ section.settings.second_text }}</p>
+          {% endif %}
+        </div>
+            {% if section.settings.button-bottom != blank %}<p style="font-size: 12px; color: #fff; text-align: center; ">{{ section.settings.button-bottom }}</p>{% endif %}
+      {% endif %}
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Richtext with btn",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "desktop_hide",
+        "label":"Desktop hide"
+      },
+      {
+        "type": "checkbox",
+        "id": "mobile_hide",
+        "label":"Mobile hide"
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background color"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_full_width",
+        "label": "Full width"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "sub_heading",
+        "label": "Sub heading"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button"
+      },
+      {
+        "type": "image_picker",
+        "id": "button-top-image",
+        "label": "Button Top Image"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "text",
+        "id": "button-bottom",
+        "label": "Button Bottom"
+      },
+      {
+        "type": "text",
+        "id": "second_text",
+        "label": "Button sub text"
+      },
+      {
+        "type": "header",
+        "content": "For desktop device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Padding top",
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label":  "Padding bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_margin_top",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Margin top",
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_margin_bottom",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Margin bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "header",
+        "content": "For mobile device"
+      },
+      {
+        "type": "range",
+        "id": "section_padding_top_mobile",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label":"Padding top",
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_padding_bottom_mobile",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Padding bottom",
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section_margin_top_mobile",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label": "Margin top",
+        "unit": "px",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "section_margin_bottom_mobile",
+        "min": 0,
+        "max": 150,
+        "step": 5,
+        "label":"Margin bottom",
+        "unit": "px",
+        "default": 100
+      }
+    ],
+    "presets": [
+      {
+        "name": "Richtext with btn"
+      }
+    ]
+  }
+{% endschema %}

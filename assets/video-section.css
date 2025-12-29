@@ -1,0 +1,63 @@
+.video-section__media {
+  --ratio-percent: 56.25%;
+  position: relative;
+  padding-bottom: calc(var(--ratio-percent) - var(--media-border-width));
+}
+
+/* Needed for gradient continuity with or without animation so that transparent PNG images come up as we would expect */
+.scroll-trigger:where(.gradient.video-section__media) {
+  background: transparent;
+}
+
+.video-section__media.global-media-settings--full-width {
+  padding-bottom: var(--ratio-percent);
+}
+
+.video-section__media.deferred-media {
+  box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--media-shadow-opacity));
+}
+
+.video-section__media.deferred-media:after {
+  content: none;
+}
+
+.video-section__poster.deferred-media__poster:focus {
+  outline-offset: 0.3rem;
+}
+
+.video-section__media iframe {
+  background-color: rgba(var(--color-foreground), 0.03);
+  border: 0;
+}
+
+.video-section__poster,
+.video-section__media iframe,
+.video-section__media video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.video-section__media video {
+  background: #000000;
+}
+
+.video-section__media.media-fit-cover video {
+  object-fit: cover;
+}
+
+/* css satrt */
+
+.video_text.pdp-custom-video-section .main_text .heading { font-size: calc(var(--font-heading-scale) * 2.8rem); text-transform: uppercase; margin-bottom: 30px; max-width: 300px; }
+.video_text.pdp-custom-video-section .main_text .subtext { font-size: calc(var(--font-body-scale) * 1.4rem); line-height: 18px; margin-top: 0; margin-bottom: 30px; }
+.video_text.pdp-custom-video-section .main_block { padding-top: 30px; display: flex; flex-direction: column; gap: 30px; }
+.video_text.pdp-custom-video-section .main_block .img_txt_wrap { display: flex; align-items: center; gap: 22px; }
+.video_text.pdp-custom-video-section .main_block .img_txt_wrap .img { width: 60px; min-width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; }
+.video_text.pdp-custom-video-section .main_block .img_txt_wrap .img img { object-fit: contain; max-width: 100%; }
+.video_text.pdp-custom-video-section .main_block .img_txt_wrap .img_titles { font-size: calc(var(--font-body-scale) * 1.3rem); line-height: 18px; margin: 0; }
+
+.video_text.pdp-custom-video-section .video-section__media{ padding-bottom: 0; margin: 0 -15px;}
+.video_text.pdp-custom-video-section .video-section__media video{position: relative;}
+
+/* css end */
